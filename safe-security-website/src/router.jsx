@@ -1,6 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import HomePage from "./components/HomePage.jsx";
+import App from "./App.jsx";
+import HomePage from "./components/pages/HomePage.jsx";
+import SafeSecPage from "./components/pages/SafeSecPage.jsx";
+import InfoHubPage from "./components/pages/InfoHubPage.jsx";
+import ArticleTemplate from "./components/infohub/ArticleTemplate.jsx";
 
 const router = createBrowserRouter([
     {
@@ -12,8 +16,16 @@ const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "about",
-                element: <AboutPage />,
+                path: "safe-security",
+                element: <SafeSecPage />,
+            },
+            {
+                path: "information-hub",
+                element: <InfoHubPage />,
+            },
+            {
+                path: "information-hub/article/:article_id",
+                element: <ArticleTemplate />,
             },
         ],
     },
