@@ -1,5 +1,11 @@
+import Body from "./Body.jsx";
+
 export default function Italics({children}) {
-    return <span className="italic">
-        {children}
-    </span>
+    return (
+        <Body>
+            <span className="italic">
+                {children}
+            </span>
+        </Body>
+    )
 }

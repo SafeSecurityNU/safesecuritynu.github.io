@@ -4,6 +4,7 @@ import { Laptop } from "lucide-react";
 import { BadgeDollarSign } from "lucide-react";
 import { Instagram } from "lucide-react";
 import { Handshake } from "lucide-react";
+import { BookMarked } from "lucide-react";
 
 export const boardList = [
     {
@@ -57,6 +58,12 @@ export const boardList = [
         icon: <Handshake />,
         name: "Eric Zhang",
         position: "Director of Community Engagement",
+        description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },{
+        icon: <BookMarked />,
+        name: "Dr. Sruti Bhagavatula",
+        position: "Northwestern University Faculty Sponsor",
         description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
