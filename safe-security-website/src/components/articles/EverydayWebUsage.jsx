@@ -95,7 +95,7 @@ export default function EverydayWebUsage() {
             <Italics>Your device will tell you if your operating system is up-to-date, or if there are new updates to be installed.</Italics>
             <SubSection>Check for HTTPS, not HTTP</SubSection>
             <Body>The S stands for Secure! When a website is HTTPS instead of HTTP, your payment info is extra secure. To check for HTTPS, it's as easy as looking at the URL box at the top of your web browser.</Body>
-            <Image src="" />
+            <Image src="http://i.imgur.com/7VYyn4h.png" />
             <Image src="" />
             <Italics>Google Chrome: In the first Image, the lock means the website is secure. But, stay on guard! HTTPS doesn't guarantee the website is 100% scam free.
             In the second Image, the URL box says “Not secure". CAUTION! Beware! Definitely do NOT give this website your payment info!</Italics>
