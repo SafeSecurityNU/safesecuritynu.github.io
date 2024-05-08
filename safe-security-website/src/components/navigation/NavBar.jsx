@@ -16,7 +16,7 @@ export default function NavBar() {
                 curPage = "Home";
                 break;
             case "/safe-security":
-                curPage = "Safe Security";
+                curPage = "Meet the Board";
                 break;
             case "/information-hub":
                 curPage = "Information Hub";

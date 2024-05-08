@@ -8,21 +8,21 @@ import { LandPlot } from "lucide-react";
 export const featuresList = [
   {
     icon: <PencilLine />,
-    text: "Write, Produce, and Edit",
+    text: "Write, Produce, and Publish",
     description:
       "Support our informational hub that curates weekly cybersecurity content that breaks down technical jargon for everyday readers.",
   },
   {
     icon: <Handshake />,
-    text: "Collaborate with Local Businesses",
+    text: "Discuss Ongoing Threats",
     description:
-      "Consult with Evanston enterprises by conducting an initial security assessment and providing security posture recommendations.",
+      "Join our weekly meetings to discuss ongoing topics in cybersecurity. From ransomware to evolving cybersecurity policy, ",
   },
   {
     icon: <BookOpenCheck />,
-    text: "Level Up Your Education with Certifications",
+    text: "Lead Cybersecurity Education Efforts",
     description:
-      "Gain free, technical expertise through the Google Cybersecurity Certification and CompTIA+ assessment.",
+      "During Cybersecurity Awareness Month, organize weekly newsletters to inform Northwestern faculty, students, and administration of ongoing threats and healthier, cyber hygiene practices.",
   },
   {
     icon: <GraduationCap />,
@@ -32,9 +32,9 @@ export const featuresList = [
   },
   {
     icon: <ShieldHalf />,
-    text: "Lead Cybersecurity Education Efforts",
+    text: "Level Up Your Education with Certifications",
     description:
-      "Organize weekly newsletters to inform Northwestern faculty, students, and administration of ongoing threats and healthier, cyber hygiene practices.",
+      "Gain free or reduced technical expertise through the Google Cybersecurity Certification and CompTIA+ assessment.",
   },
   {
     icon: <LandPlot />,
