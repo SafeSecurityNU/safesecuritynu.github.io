@@ -7,7 +7,6 @@ import SubSection from "../text/SubSection";
 import SubSubSection from "../text/SubSubSection";
 import Header from "../text/Header";
 import BulletItem from "../text/BulletItem";
-import Image from "../text/Image";
 
 export default function InternetOfThings() {
     return (
