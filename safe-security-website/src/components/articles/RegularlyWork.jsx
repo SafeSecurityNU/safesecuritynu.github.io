@@ -5,7 +5,7 @@ import Body from "../text/Body";
 import Italics from "../text/Italics";
 import Section from "../text/Section";
 import SubSection from "../text/SubSection";
-import Image from "../text/Image";
+import ArticleImage from "../text/ArticleImage";
 import LabeledItem from "../text/LabeledItem";
 
 export default function RegularlyWork() {
@@ -21,8 +21,8 @@ export default function RegularlyWork() {
                     <ContentLevelTwo text="Backup" />
                 <ContentLevelOne text="How to handle unvetted USB devices" />
                 <ContentLevelOne text="How to transfer large sensitive files" />
-                    <ContentLevelTwo text="Images" />
-                    <ContentLevelTwo text=".images directory" />
+                    <ContentLevelTwo text="ArticleImages" />
+                    <ContentLevelTwo text=".ArticleImages directory" />
                     <ContentLevelTwo text="pre-commit hook" />
                 <ContentLevelOne text="References" />
             </TableOfContents>
@@ -36,26 +36,26 @@ export default function RegularlyWork() {
             <Body>What can this type of attack look like?</Body>
             <LabeledItem label="1">Fake Messages from the “Boss"</LabeledItem>
             <Body>In this tactic, a scammer sends a message via email or text message to a user under the guise of the CEO, CFO, or other high-ranking employee. The message contains an urgent request that can potentially put sensitive company information at risk if the user falls for the scam. To make the attack more effective, scammers may use targeted language that is relevant to the business (which, in this case, is referred to as a spear-phishing attack).</Body>
-            <Image src="" />
+            <ArticleImage src="" />
             <Body>The message above is an example of a spear phishing attack. The scammer pretends to be the company director asking for company payment information. One way to recognize the attack is through the contents of the message, which utilizes vague and blunt language.</Body>
             <LabeledItem label="2">Fake Tech Support Messages</LabeledItem>
             <Body>Other phishers will pretend to be the IT department rather than a high-ranking employee in order to get the target to reveal company account credentials. With the login information of certain employees, scammers can steal confidential information.</Body>
             <Body>These attacks generally include a subject or headline that creates a false sense of urgency for the target. The message may instruct the user to click a link to reset their password or provide other account information. By clicking the link, the user will be redirected to a fake site resembling the company one where they may provide that sensitive information.</Body>
-            <Image src="" />
+            <ArticleImage src="" />
             <Body>This is a real-life example of a scam email seemingly sent from Microsoft Service Team. The incorrect spelling in the sender's email address indicates that they have a fake (or spoofed) domain.</Body>
             <LabeledItem label="3">Pop-Up Warnings</LabeledItem>
             <Body>Scammers may trick users with pop-up warnings or windows on your device. The warning may resemble an error message from your device's operating system or antivirus software with a trusted company name. The message in the pop-up will warn you of a security issue and urge you to call a phone number for assistance.</Body>
-            <Image src="" />
+            <ArticleImage src="" />
             <Body>If you get this kind of pop-up window on your computer, don't call the number. Legitimate security warnings and messages will never ask you to call a phone number.</Body>
             <LabeledItem label="4">Fake Social Media Requests</LabeledItem>
             <Body>This type of scam most often occurs on social platforms like LinkedIn, but may also be present in emails and text messages. Fake LinkedIn requests (or similar requests from other platforms) will contain a link to a nefarious site that may potentially infect your device with malware or steal sensitive information. Receiving a social media request often invokes excitement in a user, which makes these attacks particularly effective on sales and finance employees.</Body>
-            <Image src="" />
+            <ArticleImage src="" />
             <Body>These are only a few examples of the types of phishing attacks a person can encounter. Phishing can be difficult to detect, and employees likely won't identify them one-hundred percent of the time.</Body>
             <Body>Although employees may not be able to always identify phishing messages, we can adhere to more hygienic security practices to protect ourselves.  Knowing the common features in phishing scams will allow you to recognize fraudulent messages more easily.</Body>
             <SubSection>Common Features in Phishing Scams</SubSection>
             <LabeledItem label="1">Sender Information Doesn't Seem Legitimate</LabeledItem>
             <Body>Though the contents of a phishing message may seem authentic, the sender's information will never be exactly like the real sender's information. In emails, the sender may have the correct name with an incorrect email address, such as:</Body>
-            <Image src="" />
+            <ArticleImage src="" />
             <Body>Taking five seconds to identify the sender's email address can help you identify cyberthreats before it's too late.</Body>
             <LabeledItem label="2">Poor Spelling and Grammar or Unusual Wording</LabeledItem>
             <Body>Phishing attempts may contain poor spelling and confusing grammar. Likewise, company specific jargon may be incorrect. For example, if a scam message from your boss contains the term “customer" when you know the real sender usually says “client," you should take notice. While cyberattacks continue to improve over time, it's still difficult to entirely mimic a message from another person.</Body>

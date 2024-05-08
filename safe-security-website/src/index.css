@@ -7,3 +7,7 @@
     color-scheme: dark;
     scrollbar-width: none;
 }
+
+.customShadow {
+    box-shadow: 0 0 70px rgba(8, 7, 13, 1);
+}

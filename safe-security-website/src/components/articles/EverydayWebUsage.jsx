@@ -12,6 +12,7 @@ import Hyperlink from "../text/Hyperlink";
 import Italics from "../text/Italics";
 import LabeledItem from "../text/LabeledItem";
 import ReferenceItem from "../text/ReferenceItem";
+import ArticleImage from "../text/ArticleImage";
 
 export default function EverydayWebUsage() {
     return (
@@ -64,17 +65,13 @@ export default function EverydayWebUsage() {
             <BulletItem>Use proper settings to make the process less time consuming and painful.</BulletItem>
             <BulletItem>According to Microsoft Security, 2FA can block 99.9% of account compromise attacks.</BulletItem>
             <SubSubSection>What Might It Look Like To Implement 2 Factor Authentication?</SubSubSection>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://guide.duo.com/static/images/en/universal-enrollment-choose_2x.png" alt="" loading="lazy" style={{ width: '300px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://guide.duo.com/static/images/en/universal-enrollment-choose_2x.png"  style={{ width: '300px', height: 'auto' }}/>
+            
             <Hyperlink href="https://guide.duo.com/universal-prompt?wvideo=d6kzpc5ojl" text="Video from DUO—A Popular Two Factor Authentication App" />
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://embed-ssl.wistia.com/deliveries/526c02cd75cde05326fa327e5b700a7ab9214ec9.jpg" alt="" loading="lazy" style={{ width: '600px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://embed-ssl.wistia.com/deliveries/526c02cd75cde05326fa327e5b700a7ab9214ec9.jpg"  style={{ width: '600px', height: 'auto' }}/>
+            
             <SubSection>Expire Your Passwords Periodically</SubSection>
             <Italics>One day, John received an email from his company about the auto-expiration of his work account. He thought his company would make better security decisions than him. So he decided to change passwords for his other important account once his working account's password expires. This great practice is suggested by a lot of security experts.</Italics>
             <Body>Take advantage of notifications for enforced auto-expired accounts and expire all the passwords for essential accounts in the Essential Account Checklist all at once.</Body>
@@ -96,85 +93,61 @@ export default function EverydayWebUsage() {
             <Body>Always use updated operating systems and web browsers [3][8]. By staying updated, your technology will have fewer bugs and vulnerabilities than old, outdated versions.</Body>
             <Body>Some popular operating systems are Windows or macOS on your computer and iOS or Android on your phone. Some popular browsers are Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, and Internet Explorer. Your operating system and browser depend on which device you own and how it's set up.</Body>
             <Body>To update your operating system, you'll need to go on your device itself. Here's an example using Windows 10:</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/jWm81np/updateos1.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/jWm81np/updateos1.png" />
+            
             <Italics>In your device's search bar, search for “Updates". Click on the result, “Check for updates", or Updates & Security, or a similar phrase.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/c6ht0F0/updateos2.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/c6ht0F0/updateos2.png" />
+            
             <Italics>Your device will tell you if your operating system is up-to-date, or if there are new updates to be installed.</Italics>
             <SubSection>Check For HTTPS, Not HTTP</SubSection>
             <Body>The S stands for Secure! When a website is HTTPS instead of HTTP, your payment info is extra secure. To check for HTTPS, it's as easy as looking at the URL box at the top of your web browser.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/0ZXnyZw/https1.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/FDH8byd/https2.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/0ZXnyZw/https1.png" />
+            
+            
+                <ArticleImage src="https://i.ibb.co/FDH8byd/https2.png" />
+            
             <Italics>Google Chrome: In the first Image, the lock means the website is secure. But, stay on guard! HTTPS doesn't guarantee the website is 100% scam free.
             In the second Image, the URL box says “Not secure". CAUTION! Beware! Definitely do NOT give this website your payment info!</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/kJwfrF3/https3.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/dGRhbPK/https4.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/kJwfrF3/https3.png" />
+            
+            
+                <ArticleImage src="https://i.ibb.co/dGRhbPK/https4.png" />
+            
             <Italics>Microsoft Edge: In the first Image, the lock is showing, AND the start of the URL says HTTPS.</Italics>
             <Italics>In the second Image, there is no lock and it says “Not secure" instead. Stay away!</Italics>
             <SubSection>Use Built-In Enhanced Security Protection</SubSection>
             <Body>Many modern browsers, like Google Chrome, have some enhanced security protection built-in. Enhanced security protection automatically protects against dangerous websites and downloads. Most modern web browsers have this feature. Here's how you enable it in Google Chrome:</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/M8zvGSK/enhanced1.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/M8zvGSK/enhanced1.png" />
+            
             <Italics>Click the three dots at the top right corner of the browser, and then select Settings.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/Vq0TmLx/enhanced2.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/Vq0TmLx/enhanced2.png" />
+            
             <Italics>In settings, click Privacy and security on the left side, and then select Security.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/VDtFqP8/enhanced3.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/VDtFqP8/enhanced3.png" />
+            
             <Italics>Click the option box for “Enhanced protection". Your web browsing will now be more protected!</Italics>
             <SubSection>Be Aware Of Your Environment</SubSection>
             <Body>Only use your own personal device for online banking and payments since public devices are less secure. If you must use a public device, use an incognito window and don't store any information. Most modern browsers have some form of incognito window. Here's how to open one on Google Chrome:</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/st8bP5L/incognito1.png" alt="" loading="lazy" style={{ width: '400px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/st8bP5L/incognito1.png"  style={{ width: '400px', height: 'auto' }}/>
+            
             <Italics>Click the three dots at the top right corner of the browser, and then select New Incognito window.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/4YtzprH/incognito3.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/4YtzprH/incognito3.png" />
+            
             <Italics>A new dark-colored window will pop up. Use this window to browse the web! Once you close this window, your information, like your passwords, will automatically be deleted.</Italics>
             <SubSection>Monitor Your Online Security Status</SubSection>
             <Body>Know when things go wrong! It's always easier to fix problems if you catch them right away.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/4fHn1fL/monaccsec.png" alt="" loading="lazy" style={{ width: '550px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/4fHn1fL/monaccsec.png"  style={{ width: '550px', height: 'auto' }}/>
+            
             <Italics>First, a hacker obtains Bob's bank account info.</Italics>
             <Italics>Next, since Bob had security alerts on, he was able to see the fishy transfer and contact his bank ASAP.</Italics>
             <Italics>However, if Bob hadn't had security alerts on, a week would've passed, and Bob's money would have been gone forever.</Italics>
@@ -182,72 +155,52 @@ export default function EverydayWebUsage() {
             <SubSection>Check For Previous Data Breaches</SubSection>
             <Body>Check if your information has been involved in previous data breaches. If one of your passwords was compromised before, check up on EVERY account that used that password and change it!</Body>
             <Body>You can check if you've been compromised at <Hyperlink href="https://haveibeenpwned.com/" text="haveibeenpwned"/>.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/9bTQ6c8/haveibeenpwned.png" alt="" loading="lazy" style={{ width: '550px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/9bTQ6c8/haveibeenpwned.png"  style={{ width: '550px', height: 'auto' }}/>
+            
             <Italics>On haveibeenpwned.com, just enter your email or mobile number into the search bar. Scroll down, and it'll tell you which breaches affected you.</Italics>
             <SubSection>Set Up Account Alerts</SubSection>
             <Body>Nearly 42 million Americans were victims of identity fraud in 2021, costing consumers $52 billion in total losses. </Body>
             <Body>You can monitor for identity theft by setting up account alerts. Here is how to set up alerts for Bank of America—the process will be similar for other banks.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/34ZpjTj/accalerts1.png" alt="" loading="lazy" style={{ width: '550px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/34ZpjTj/accalerts1.png"  style={{ width: '550px', height: 'auto' }}/>
+            
             <Italics>On the dashboard, click on Alerts, and then click on Set up alerts. On other banking sites, just look for any button that says Alerts, or use the search bar.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/SNV0NPg/accalerts2.png" alt="" loading="lazy" style={{ width: '550px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/SNV0NPg/accalerts2.png"  style={{ width: '550px', height: 'auto' }}/>
+            
             <Italics>On the Set up alerts page, select General & Security alerts from the left side.</Italics>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.ibb.co/XjjVPkn/accalerts3.png" alt="" loading="lazy" style={{ width: '550px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.ibb.co/XjjVPkn/accalerts3.png"  style={{ width: '550px', height: 'auto' }}/>
+            
             <Italics>In General & Security alerts, you can enable any alerts that might notify you about security attacks.</Italics>
             <Section>Social Media: Do You Use Any Social Media Apps?</Section>
             <SubSection>Common Types of Social Media Scams</SubSection>
             <Body>Some common types of social media scams are phishing scams, lottery prize scams, investment scams, charity scams, job scams, and romance scams.</Body>
                 <BulletItem> <strong>Phishing scams</strong> are scams where scammers use fake profiles or websites to trick users into providing sensitive information.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/aWXBnbw.jpg" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/aWXBnbw.jpg"  style={{ width: '500px', height: 'auto' }}/>
+
                 <BulletItem><strong>Lottery prize scams</strong> are scams where scammers claim the user has won a prize, and ask for a payment before they can claim their winnings.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/nZbaZvJ.jpg" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/nZbaZvJ.jpg"  style={{ width: '500px', height: 'auto' }}/>
+
                 <BulletItem><strong>Investment scams</strong> are scams where scammers promise a high return on investment, but actually steal the user’s money.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/tX1PXhT.gif" alt="" loading="lazy" style={{ width: '450px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/tX1PXhT.gif"  style={{ width: '450px', height: 'auto' }}/>
+
                 <BulletItem> <strong>Charity scams</strong> are scams where scammers pose as a legitimate charity organization and ask for donations, but they actually use the money for their own purposes.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/s9YyxjS.jpg" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/s9YyxjS.jpg"  style={{ width: '500px', height: 'auto' }}/>
+
                 <BulletItem> <strong>Job scams</strong> are scams where scammers offer fake job opportunities, ask for a fee to process the application, and steal personal information.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/uPmC3Ch.jpg" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/uPmC3Ch.jpg"  style={{ width: '500px', height: 'auto' }}/>
+
                 <BulletItem> <strong>Romance scams</strong> are scams where scammers pretend to be interested in a romantic relationship but actually use the relationship to scam the victim.</BulletItem>
-                <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/xjwWeNe.jpg" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-                </div>
-                <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/xjwWeNe.jpg"  style={{ width: '500px', height: 'auto' }}/>
+
             <SubSection>Tips To Avoid Falling For A Social Media Scammer</SubSection>
             <LabeledItem label="1">Be skeptical</LabeledItem>
             <SubBulletItem>Be cautious and question messages or offers that come from unknown or unverified sources.</SubBulletItem>
@@ -255,62 +208,46 @@ export default function EverydayWebUsage() {
             <SubBulletItem>Don't provide any information until you have verified the identity of the sender.</SubBulletItem>
             <LabeledItem label="2">Verify authenticity</LabeledItem>
             <SubBulletItem>Look out for the blue check mark for verified social media accounts.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/t09Z2eU.png" alt="" loading="lazy" style={{ width: '700px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/t09Z2eU.png"  style={{ width: '700px', height: 'auto' }}/>
+                
             <SubBulletItem>Check the number of followers; famous people and organizations have a lot of followers.</SubBulletItem>
             <SubBulletItem>Verify authenticity of profiles, websites, and organizations.</SubBulletItem>
             <SubBulletItem>Charity navigator (below) helps you identify valid charity organizations.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/F2CVAjA.jpg" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/F2CVAjA.jpg" />
+                
             <SubBulletItem>Visit official websites of organizations and contact them through a verified phone number.</SubBulletItem>
             <LabeledItem label="3">Keep software up-to-date</LabeledItem>
             <SubBulletItem>Regularly update the operating system. For Mac users: click on the Apple menu in the top-left corner of your screen, select "System Preferences", click on “Software Update."</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/AaYB1U4.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/AaYB1U4.png" />
+                
             <SubBulletItem>Keep your browser up-to-date. Click the top-right “update" button (shown below) on your Google Chrome browser.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/xFh15Kd.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/xFh15Kd.png" />
+                
             <SubBulletItem>Install anti-virus software and keep it up-to-date.</SubBulletItem>
             <SubBulletItem>Enable two-factor authentication.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/EeYkXeI.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/EeYkXeI.png" />
+                
             (Screenshot above shows two-factor authentication on Instagram: Instagram, Profile, Edit profile, Privacy & Security)
             <LabeledItem label="4">Be mindful of privacy settings</LabeledItem>
             <SubBulletItem>Regularly review privacy settings.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/nQACwfu.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/nQACwfu.png" />
+                
             <Body>To get to the screen above on a Mac: (click on the Apple menu in the top-left corner of your screen, Select "System Preferences", Click on Security & Privacy), then you can check and adjust your privacy settings</Body>
             <SubBulletItem>Avoid sharing personal information on social media.</SubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/i4jE81Z.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/i4jE81Z.png" />
+                
             <Body>What's wrong with the post above? Mariam is sharing her physical address, her medical condition, and her whereabouts on Saturday mornings. Please don't share these on social media. Also, don't share your SSN number, financial information, or passwords.</Body>
             <SubSubBulletItem>Avoid clicking on suspicious links.</SubSubBulletItem>
-            <br></br>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <img src="https://i.imgur.com/ZdtltCm.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-                </div>
-            <br></br>
+                
+                    <ArticleImage src="https://i.imgur.com/ZdtltCm.png" />
+                
             <Section>Appendix</Section>
             <SubSection>Essential Account Checklist</SubSection>
             <BulletItem>Bank account</BulletItem>

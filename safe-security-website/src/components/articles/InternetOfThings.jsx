@@ -7,6 +7,7 @@ import SubSection from "../text/SubSection";
 import SubSubSection from "../text/SubSubSection";
 import Header from "../text/Header";
 import BulletItem from "../text/BulletItem";
+import ArticleImage from "../text/ArticleImage";
 
 export default function InternetOfThings() {
     return (
@@ -39,30 +40,24 @@ export default function InternetOfThings() {
             <Body>When burglars see a house that is frequently left unlocked, they note down the address so that they can break into it at a later time. Similarly, once hackers see your devices on the Internet, they note it as a potential target. A good way to avoid being attacked by hackers is to not appear on their list at all.</Body>
             <SubSubSection>How do I fix this?</SubSubSection>
             <Body>Set your IoT device to be only accessible when you're sharing its local network (i.e., when you're at home). We have an example below, and the exact steps will differ by device, but look for a setting that allows you to turn on local area network (LAN) control. Pictured below are ways to do this from various smart apps.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/pqRDq1A.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/pqRDq1A.png" />
+            
             <SubSection>How to prevent default password attacks</SubSection>
             <SubSubSection>Whom does this apply to?</SubSubSection>
             <Body>If you are not 100% sure that you have changed the default passwords on your IoT devices or network router, this section applies to you.</Body>
             <SubSubSection>What is happening?</SubSubSection>
             <Body>Most IoT devices and network routers have a set of default credentials that come with them so you can log into the device for the first time. Those credentials are often available on the Internet, either on manufacturer help pages or in owner's manuals. However, most IoT devices use very insecure default password combinations. Some example default usernames and passwords include: support/support, admin/admin, admin/0000, user/user, or root/12345.. If you do not change your default username and password, then the login information for your device is publicly accessible on the web for anyone to use. Pictured below are default usernames and passwords used by a Philips router.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/kNaxs7D.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/kNaxs7D.png" />
+            
             <SubSubSection>Why is this a problem?</SubSubSection>
             <Body>In 2016, a hacker organization created something called the Mirai Botnet–basically, a large collection of devices that they could control. First, they searched the Internet for accessible devices. Then, they gathered a list of the 62 most common default usernames and passwords and tried to access all the devices they found. By September 20, 2016, they had <Hyperlink href="https://www.asmag.com/showpost/26498.aspx" text="150,000 devices" /> under their control, using only those 62 sets of credentials. Think of default credentials as a master key to every house in a neighborhood. By leaving default credentials on the device, you're doing the computer-equivalent of not changing your locks. If the master key is floating around on the Internet, it's essentially the same as not having a lock on your door at all.</Body>
             <SubSubSection>How do I fix this?</SubSubSection>
             <Body>Make sure you change your default credentials. Most IoT devices have a "settings" menu on their mobile app, and within that "settings" menu should be a profile option or a security menu. You should be able to navigate from there to a page to change your password. When changing your password, remember to keep in mind good password design: avoid using any complete common words or phrases you share on social media; use a mix of capital letters, lowercase letters, numbers, and symbols; and make your passwords longer than 12 characters. All of these measures will dramatically increase the amount of time it takes a hacker to "crack" (or, guess) your password.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/JsykpKl.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/JsykpKl.png" />
+            
             <SubSection>How to prevent hackers from infiltrating your IoT devices</SubSection>
             <SubSubSection>Whom does this apply to?</SubSubSection>
             <Body>If your IoT devices are running outdated firmware, or you are not sure when the last time you updated your IoT firmware is, this section applies to you.</Body>
@@ -98,32 +93,26 @@ export default function InternetOfThings() {
             <SubSubSection>What is happening?</SubSubSection>
             <Body>A hacker can go from controlling your IoT devices to controlling your phones/laptops/other devices.</Body>
             <Body>We can think of devices that share the same WiFi network as being in the same "cyberspace." Just as it is pretty easy to move between two places in the same physical space (from your kitchen to your living room, for example), it is relatively easy for a hacker to move from your IoT device to your personal device if they are in the same "cyberspace.". This technique is known as lateral movement.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/brq6CN4.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/brq6CN4.png" />
+            
             <SubSubSection>Why is this a problem?</SubSubSection>
             <Body>A hacker who has access to your personal devices might gain access to even more sensitive information, such as your bank details (if you use internet banking), and can cause even more harm to you.</Body>
             <SubSubSection>How do I fix this?</SubSubSection>
             <Body>Isolate your IoT devices to their own WiFi network.</Body>
             <Body>We have an example from the Xfinity WiFi controller app. You will want to look for a similar setting, and turn <strong>on</strong> the split bands settings.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/PaXaptF.png" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/PaXaptF.png"  style={{ width: '500px', height: 'auto' }}/>
+            
             <Body>You will notice that this involves changing a setting which is marked as "not recommended". Indeed, this step requires a certain amount of technical expertise. If you are not comfortable with this step, we urge you to weigh the pros and cons, and consider if you really want to set up an IoT system.</Body>
             <SubSection>How to avoid becoming a zombie</SubSection>
             <SubSubSection>Whom does this apply to?</SubSubSection>
             <Body>If the section on hackers controlling your devices applies to you, this one does, too.</Body>
             <SubSubSection>What is happening?</SubSubSection>
             <Body>At this point, you need to stop thinking of your IoT device in terms of what it does and start thinking of it as a resource. An IoT device has computing power (by definition; see the introductory section above!), power, and network connectivity. Hackers can write code to control hundreds or thousands of IoT devices at once and use them as one giant computer, sort of like a hive mind. You specifically aren't a target in this kind of attack; your device's power and computing resources are being stolen to help a hacker achieve a bigger end goal.</Body>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/ZkXBlfK.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+                <ArticleImage src="https://i.imgur.com/ZkXBlfK.png" />
+            
             <SubSubSection>Why is this a problem?</SubSubSection>
             <Body>For you, this may look like your device being "bricked"; that is, your device can slow down or stop working, because all of its computing and power resources are being diverted to whatever a hacker wants. But what can a hacker do with all of these devices? A common application is mining cryptocurrency; with thousands of small devices, a hacker can create a pretty sizable mining operation equivalent to a few big computers. Hackers can also use IoT devices to execute distributed denial-of-service (DDoS) attacks, where thousands of devices flood a service like a website or application with traffic and cause it to shut down. Finally, hackers can also utilize the electrical power of your devices. Remember the year that Texas got snow and it overloaded the power grid? Imagine if a hacker had control of 500 Nest home systems in Dallas and decided to turn everyone's heat on to the max at once. That could cause a catastrophic power failure. This is called a MaDIoT (Manipulation of Demand via IoT) attack.</Body>
             <SubSubSection>How do I fix this?</SubSubSection>
@@ -149,70 +138,50 @@ export default function InternetOfThings() {
             <SubSubSection>Protecting your Amazon Echo</SubSubSection>
             <Body>In 2018, a report revealed that <Hyperlink href="http://www.inderscience.com/storage/f105197114638122.pdf" text="Amazon Echo was recording and storing conversations"/> of users without their knowledge. Here are four steps to enable privacy settings on your Amazon Echo:</Body> 
             <BulletItem><strong>Mute the Microphone:</strong> The Amazon Echo is designed to always listen for the wake word, such as "Alexa" or "Echo." However, you can mute the microphone on the device to prevent it from listening. To do this, simply press the microphone off button on the device.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/9r8aHPO.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/9r8aHPO.png" />
+            
             <BulletItem> <strong>Review Voice History:</strong> Alexa stores recordings of your voice commands, which you can review and delete at any time. To do this, go to the "Settings" menu in the Alexa app, select "Alexa Privacy," and then select "Review Voice History." </BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/7uGAJcO.jpg" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br> 
+            
+            <ArticleImage src="https://i.imgur.com/7uGAJcO.jpg" />
+             
             <BulletItem> <strong>Manage Skills:</strong> Alexa has "skills," which are like apps that you can add to the device. Some skills may request access to your personal information, so it's important to review the permissions that each skill requires before enabling it.</BulletItem>
             <BulletItem><strong>Disable Purchase Voice Recognition:</strong> Alexa can be used to make purchases on Amazon, but this feature can be a privacy concern. To disable it, go to the "Settings" menu in the Alexa app, select "Alexa Account," and then select "Voice Purchasing."</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/thHDy1u.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/thHDy1u.png" />
+            
             <SubSubSection> Protecting your Google Home </SubSubSection>
             <Body>In 2017, <Hyperlink href="https://www.theguardian.com/technology/2019/jul/11/google-home-assistant-listen-recordings-users-privacy" text="Google Home Mini was found recording and transmitting audio"/> without permission due to a touch sensor defect. Google released a software update to fix the issue. In 2019, <Hyperlink href="https://money.cnn.com/2017/10/11/technology/google-home-mini-security-flaw/index.html" text="Google Home was reported to be recording audio"/> of users without their command. Google attributed the issue to a device malfunction and committed to resolving it. Here are four steps to enable privacy settings on your Google Home:</Body>
             <BulletItem><strong>Mute the Microphone:</strong> The Google Home is designed to always listen for the wake word, "OK Google." However, you can mute the microphone on the device to prevent it from listening. To do this, simply press the microphone off button on the device.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/tvI3MVm.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/tvI3MVm.png" />
+            
             <BulletItem><strong>Review and manage your Google Home activity:</strong> Google Home keeps a record of your voice commands and interactions with the device, which you can review and delete. To do this, go to the "My Activity" section in your Google account settings, select "Filter by product" and choose "Google Assistant". You can then view and delete individual voice commands or activity history.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/u71AikQ.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/u71AikQ.png" />
+            
             <BulletItem><strong>Turn off "Ok Google" voice recognition:</strong> If you don't want your Google Home device to listen for the "Ok Google" voice command, you can turn off the voice recognition feature. To do this, open the Google Home app on your phone, tap on your device, select "Settings", and then turn off the "Hey Google" or "Ok Google" wake word.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/MyY5zPD.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/MyY5zPD.png" />
+            
             <BulletItem><strong>Adjust privacy settings:</strong> Google Home allows you to adjust certain privacy settings, such as turning off personal results or changing the sensitivity of the device's microphone. To access these settings, go to the "Settings" section of your Google Home app and select "More settings," then choose "Privacy".</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/2t6gqP0.png" alt="" loading="lazy" style={{ width: '500px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/2t6gqP0.png"  style={{ width: '500px', height: 'auto' }}/>
+            
             <SubSubSection>Protecting your Smart TV</SubSubSection>
             <Body>In 2017, <Hyperlink href="https://www.ftc.gov/news-events/news/press-releases/2017/02/vizio-pay-22-million-ftc-state-new-jersey-settle-charges-it-collected-viewing-histories-11-million" text="Vizio, a smart TV manufacturer, was fined $2.2 million"/> for selling users' viewing data without their consent. If you own a smart TV or streaming device, it's essential to take steps to protect your privacy. Here are <Hyperlink href="https://www.today.com/news/how-stop-your-smart-tv-tracking-you-t171287" text="settings to disable on three most common smart TV and streaming device platforms"/>:</Body>
             <BulletItem><strong>Samsung:</strong> First, access the "Settings" option. Then, find and select the "Support" option. Once you are on the support page, scroll down until you see the "Terms and Policy" section and click on it. From there, look for the "Viewing Information Services" option and click on it. You will see an option to agree or disagree with the platform's monitoring of your viewing history. Uncheck the "I agree" option if you wish to prevent the platform from monitoring your viewing history. Next, navigate to the "Interest-Based Advertisements Service Privacy Notice" and turn it off. This will prevent targeted ads from appearing while you use the platform. By following these steps, you can customize your settings on this platform to control the monitoring of your viewing history and prevent targeted advertisements.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/vwn9pSN.jpg" alt="" loading="lazy" style={{ width: '800px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/vwn9pSN.jpg"  style={{ width: '800px', height: 'auto' }}/>
+            
             <BulletItem><strong>Roku:</strong> To modify your Roku's privacy and advertising settings, start by accessing the "Settings" option from the home screen. From there, select "Privacy" to access the privacy settings. Once you are on the privacy page, find and click on "Advertising." This will bring up an option to "Limit Ad-Tracking," which you should check if you wish to restrict the use of your data for targeted ads. After checking this option, return to the previous screen and select "Smart TV Experience." You will see an option to "Use Information for TV Inputs," which is a feature that enables the smart TV's ACR technology. To disable this feature, uncheck the box next to "Use Information for TV Inputs." By following these steps, you can customize your smart TV's privacy and advertising settings, giving you more control over how your data is used by the device.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/MuhsYTw.jpg" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/MuhsYTw.jpg" />
+            
             <BulletItem><strong>Fire TV:</strong> To modify your device's privacy settings, access the "Settings" option, and then select "Preferences." From there, find and click on "Privacy Settings." Once you are on the privacy settings page, look for an option that says "Device Usage Data" and turn it off. This will prevent your data from being used for personal marketing purposes. Additionally, look for options to "Collect App and Over the Air Usage" and "Interest-Based Ads" and disable them as well. By disabling these options, you can prevent your data from being collected and used for targeted advertising. Following these steps will allow you to customize your device's privacy settings and control how your data is being used by the device.</BulletItem>
-            <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://i.imgur.com/Fvvn3Pb.png" alt="" loading="lazy" style={{ width: '800px', height: 'auto' }}/>
-            </div>
-            <br></br>
+            
+            <ArticleImage src="https://i.imgur.com/Fvvn3Pb.png"  style={{ width: '800px', height: 'auto' }}/>
+            
             <SubSubSection>Google's Acquisition of Fitbit</SubSubSection>
             <Body>In 2019, <Hyperlink href="https://time.com/5717726/google-fitbit/" text="Google announced its intention to acquire Fitbit"/>, a fitness tracking company. The acquisition faced scrutiny from privacy advocates concerned about Google's access to users' sensitive health data. In December 2020, the European Union launched an antitrust investigation into the acquisition due to data privacy concerns.</Body>
             <SubSubSection>Ring's Partnerships with Police Departments</SubSubSection>

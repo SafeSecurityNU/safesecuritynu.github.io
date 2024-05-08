@@ -12,6 +12,7 @@ import SubSection from "../text/SubSection";
 import SubSubSection from "../text/SubSubSection";
 import ReferenceItem from "../text/ReferenceItem";
 import BulletItem from "../text/BulletItem";
+import ArticleImage from "../text/ArticleImage";
 
 export default function MachineLearning() {
     return (
@@ -52,35 +53,19 @@ export default function MachineLearning() {
         <SubSection>Acknowledgements</SubSection>
         <Body>This wiki was part of a quarter-long quest to develop privacy and security educational advice documents that was done at Northwestern University in the first quarter of 2023. The individuals responsible for the creation of this document are Anish Bhardwaj, Andrew Huang, and David Kim. We would like to thank our Professor, Prof. Sruti Bhagavatula for her help and the opportunity to work on this project. While advice in this document has been sourced from various online mediums, we also had the opportunity to interview an expert, Dr.Sharif, and have incorporated his advice across the document as well. We would like to thank him for his contributions as well. We would also like to thank the students and professionals we surveyed for a preliminary question in this project as well as the students of our class who helped iterate over our advice.</Body>
         <SubSection>Target Audience</SubSection>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/OtOEkXh.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/OtOEkXh.png" />
         <Body>The target audience of our advice document is of course anyone who wishes to learn about Privacy and Security in AI and ML but we have also used terms and referred to tools that are common in the ML space. This is because the focus of our advice is to help individuals in this field and thus a more specialized focus area for us was MLOps engineers. This refers to individuals across the board who work with ML systems, be it for designing new models, maintaining existing models, working with Data and ETL processes, and more. We welcome anyone who wishes to learn more but also acknowledge that the advice is slightly more tailored for this target audience.</Body>
         <SubSection>The Opinion of ML Engineers</SubSection>
         <Body>For the purpose of this project, we felt that it was also important to understand how MLOps engineers actually view privacy and security and how important they deem it to the development process. To this effect, we surveyed a mix of 30 professionals and students in this field and these were the results. We asked these individuals to record their opinions on a likert scale from 1 to 5 with 1 being the least important and 5 being the most important.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/H7rOUkg.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/H7rOUkg.png" />
         <Body>As can be seen from the results we garnered, most individuals in this space deem Security to have lower importance than Privacy. This is partly due to the fact that individuals seem to believe that Security is the work of Security Engineers with most MLOps engineers focusing on developing robust models or working on Data Transformation processes. The individuals surveyed did show a keen interest in privacy however, partly due to the fact that many of them worked with exclusive or protected data and were aware of the space of data privacy laws and how that could affect the organization.</Body>
         <Body>This survey further illustrates the importance of having such an advice document created. While individuals showed a slightly higher importance for privacy, even this was not a keen enough interest in the field. In the remainder of this document, you will see why it’s important for individuals in this space to be aware of and to take on certain practices for development of AI/ML systems. We will discuss risks and potential problems as well as solutions to such problems in this document. Without further ado, let’s dive into privacy.</Body>
         <SubSection>Privacy in Machine Learning and AI</SubSection>
         <Body>Machine learning takes on a few different roles in the field of privacy, and while this document will focus on building ML systems that are secure towards privacy attacks, it’s important to understand how it can be used in other aspects as well. The first way that ML can be used is as a privacy-enhancing tool; that is, ML models can be trained to read privacy data as input and provide recommendations on mitigation strategies and privacy actions. ML can also be used in an adversarial manner to attack traditional privacy mechanisms and expose sensitive information. Finally, ML models can be targets for privacy attacks aimed at stealing sensitive data in the training set or the model itself.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/7H6yjht.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/7H6yjht.png" />
         <Body>Before considering how to build a secure ML system, it is important to create a threat model to frame your security decisions around. A threat model is a framework meant to contextualize potential attackers of your system; what resources they have, what parts of your system they have access to, and what their goals are. By using threat models, we can avoid defending against nebulous enemies who’s resources and goals are ill-defined and thus can “shift” around as we make privacy decisions; it makes the discussion less hypothetical and more concrete.</Body>
         <Body>There are two general categories of threat models; white-box and black-box. A white-box model assumes that the attacker has access to the model’s source code and parameters, while a black-box model assumes that the attacker only has access to the outputs of the model. Essentially, a white-box threat has much greater knowledge about how the model works internally and how it produces its results.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/B2TSSl8.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/B2TSSl8.png" />
         <Body>In practice, the black-box model may seem more applicable, as many ML models are not open-source and thus hide their source code and parameters from the public. This is becoming increasingly true with the advent of ML as a service (MLaaS), which focuses on abstracting away the model from the user and focusing only on the outputs. However, it is our recommendation that ML engineers make privacy decisions with the white-box model in mind instead, for two reasons. The first reason is that the white-box threat model represents the worst-case scenario, so defenses against a white-box attack will also be effective against black-box attacks (but not vice versa). Secondly, the black-box model is never a guarantee; a private model can always be stolen or leaked, thus forcibly turning the threat scenario into a white-box one.</Body>
         <SubSection>Privacy Attacks</SubSection>
 <       Body>In this section, we will summarize some of the most prevalent privacy attacks against ML models, discuss their goals and what part of the system they attack, and some of the methods used to implement them. To contextualize these attacks, imagine a hypothetical ML model that aims to predict cancer diagnoses in patients based on a variety of factors, such as age, gender, race, height, weight, and medical history. Of course, this model contains a lot of sensitive information in the training data and features, making it a good example for our attacks.</Body>
@@ -94,25 +79,13 @@ export default function MachineLearning() {
         <Body>Now that we have discussed some common forms of privacy attacks against ML, we can look at some of the most effective and simple to implement defenses against them. These fall into two main categories; differential privacy and distribution.</Body>
         <SubSubSection>Differential Privacy</SubSubSection>
         <Body>Differential privacy is the process of adding random noise to the ML pipeline in order to protect it from privacy attacks. This noise can be added to all parts of the pipeline - pre-processing, in-processing, and post-processing - with various tradeoffs depending on the degree of DP implemented and where it is done.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/0t8hQWV.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/0t8hQWV.png" />
         <Body>In general, implementing DP in the model (specifically with noise added to the optimizer) has the best balance between privacy protection and performance. Therefore, below we will demonstrate two methods to implement DP in-processing with two popular ML libraries in Python.</Body>
         <Body>Sklearn is a very commonly used python library used for simple implementations of various ML models that abstract away most of the internal details, allowing users to simply pick a model and some simple parameters. IBM has created a companion library called DiffPrivLib that follows the Sklearn format but with differentially-private versions of their models instead. Using DiffPrivLib is as simple as replacing the library import at the top of the page.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/5WkAGWr.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/5WkAGWr.png" />
         <Body>DiffPrivLib also has an extra feature called a budget accountant, that allows you to measure what it calls your “privacy spend”; that is, the amount of computational resources you spend on your differentially private implementation of the model compared to the standard version. You can set a privacy budget and have the accountant alert you when you exceed it, or simply leave the budget undefined and measure your total privacy cost passively.</Body>
         <Body>Another commonly used python library for machine learning is TensorFlow, which also has a DP version called TensorFlow Privacy. This library works by adding a wrapper around the base TensorFlow optimizers in order to implement DP. While the process is slightly more involved than using DiffPrivLib, it is still quite straightforward and does not require many extra lines of code.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/uykILeK.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/uykILeK.png" />
         <Body>The main difference in TensorFlow Privacy is the addition of three new hyperparameters to the optimizer function. The first of these is “l2_norm_clip,” which defines the amount by which you want to clip your gradients in the optimizer. This is to avoid the optimizer reacting strongly to any one particular training data point, reducing overfitting and making the model less vulnerable to membership inference and similar attacks.</Body>
         <Body>The second new hyperparameter is “noise_multiplier,” which is simply a variable determining how much noise you want to add to your gradients. A higher multiplier means more noise and thus a higher privacy guarantee, but lower performance, so this is the hyperparameter you want to pay the most attention to in terms of trade-offs.</Body>
         <Body>The final hyperparameter is “num_microbatches,” which is another performance related variable. This determines the number of microbatches that are used when applying noise to the gradients, with certain batching values being more efficient than others depending on the context of the problem. This value is usually best left as its default value, unless you are trying to seriously optimize the training time of your model.</Body>
@@ -121,21 +94,13 @@ export default function MachineLearning() {
         <Hyperlink href="https://github.com/opendp/opacus" text="Opacus"/>
         <SubSubSection>Distribution</SubSubSection>
         <Body>The other form of privacy protection we will discuss is distribution and aggregation, of both the model and the data. While differential privacy prevents the sensitive data from being extracted or revealed from the model, distribution and aggregation aims to separate the data and model in the first place. There are several different methods of distribution, but they all share the same goal of splitting up the “central” model into smaller components, thus removing the single point of failure present in traditional ML systems.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/gQXDsPY.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/gQXDsPY.png" />
         <Body>One method of distribution is called distributed learning, in which individual models are trained on the user’s own devices with their individual data, perform classifications, and then vote on the final classification. Another method called federated learning, a term coined by Google, involves the local models submitting their weights and gradients to a central aggregator, which averages them out to create a final model. Either way, the purpose of these distribution methods is the same; to protect individual privacy by keeping data on individual’s devices instead of sending them to a central location, where it can be either intercepted or attacked when it arrives.</Body>
         <SubSection>Security in Machine Learning and AI</SubSection>
         <SubSubSection>Why is Security important?</SubSubSection>
         <Body>Well now that we’ve established problems and solutions on the privacy side of things, let’s talk a little bit about Security. Most people still seem to feel that the Security side of things is the responsibility of solely Security Engineers but, as the scope of the ML Engineer has expanded, there is work on the Security end for MLOps individuals as well. Also, not all organizations have the ability to shell out resources for dedicated Security engineers for every part of the operation which makes it all the more important for MLOps Engineers to take matters into their own hands by incorporating best practices and tools into their pipeline that will improve Security across the board in Machine Learning Production systems. It hasn’t become commonplace yet, but we envision a new bracket opening up amongst MLOps engineers which would be that of the ML Security Engineer.</Body>
         <Body>Now, without digressing too much, let’s discuss the 5 main reasons why MLOps engineers need to talk about security as well.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/7QhWPJK.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/7QhWPJK.png" />
         <LabeledItem label="1">Protecting Sensitive Data</LabeledItem>
 	        <SubBulletItem>This is something that we have already discussed to an extent in the privacy section but in general, Data can sometimes be sensitive. As AI/ML Production systems become commonplace across the board in areas like Healthcare and the Government, there is a lot of sensitive data out there that’s being used. It’s extremely important to make sure this data is protected.</SubBulletItem>
         <LabeledItem label="2">Preventing Malicious Attacks</LabeledItem>
@@ -148,19 +113,11 @@ export default function MachineLearning() {
 	        <SubBulletItem>This is important for the security of AI/ML systems because users must have confidence that the system is secure and trustworthy to use it effectively. Trust can be built through transparency, accountability, and effective communication about the system’s capabilities and limitations. This is particularly important for sensitive applications, such as healthcare or finance, where users need assurance that their personal information is being handled securely and ethically. Building trust with users can also help to detect and mitigate potential security risks or malicious attacks, as users are more likely to report suspicious behavior or anomalies when they trust the system.</SubBulletItem>
         <Body>Now, let’s dive into the nitty gritty of these a little further… starting off with the ML Production pipeline.</Body>
         <SubSubSection>AI/ML Pipeline and Risks</SubSubSection>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/p2isIO5.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/p2isIO5.png" />
         <Body>In the diagram showcased here, we can see a very simple example/ high level overview of an AI/ML production pipeline. Of course, this pipeline doesn’t actually showcase all the individual parts as we could create an entire separate document on just the Feature store and risks associated with that! However, the purpose of this diagram is to show that Data Ingestion happens from multiple places and is stored in the feature store after being transformed and put together in the desired manner. From here, Machine Learning models make use of this data to train and the output of these is seen in production at the frontend.</Body>
         <Body>Obviously not all models have a frontend for users to interact with but many do and the focus of this advice document is to highlight the two potential areas where adversaries may attempt to relay attacks. These are the <strong>Data</strong> and the <strong>Machine Learning Models</strong> themselves. There is of course a lot more to security and the pipeline itself in an organization which includes backend processes, frontend processes, and so much more but the focus of this document, once again, is on those areas that MLOps engineers need to become privy to, and specifically those areas that deal with the Machine Learning process.</Body>
         <SubSubSection>Data Pipeline Risks</SubSubSection>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/hPd5S40.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/hPd5S40.png" />
         <Body>Well, here are some types of attacks that a Data Pipeline that is set up for a Machine Learning Production environment might be exposed to. How may each of these happen you may ask… well, read along to find out!</Body>
         <LabeledItem label="1">DDoS Attacks</LabeledItem>
 	        <SubBulletItem>In the case of data pipelines in machine learning production environments , DDoS attacks can be directed at the API endpoints that are used to submit data for processing or receive predictions from the model. Attackers can flood these endpoints with a large number of requests, causing the pipeline to become overloaded and unresponsive. This can result in denial of service for legitimate users or cause delays in processing, which can impact business operations.</SubBulletItem>
@@ -171,11 +128,7 @@ export default function MachineLearning() {
         <Body>WHOA… That seems pretty hefty doesn’t it! And that’s exactly the point of this conversation. Many MLOps engineers aren’t even aware that these types of attacks can be levied on their systems. With this being such a new industry and with most of it still being centric to large corporations who have the resources to have Security engineers monitoring these pipelines, it hasn’t been made clear yet as AI/ML systems trickle down to smaller organizations and other corporations that Data Pipelines and ML pipeline are vulnerable to attacks like this as well. But don’t worry, because you’ve made your way to this advice document and will now be equipped with the knowledge of what could happen and how to prevent this in the future.</Body>
         <SubSubSection>Best Practices and Tools for Threat Mitigation</SubSubSection>
         <Body>Now for these Data Pipelines, let’s talk a little bit about the best practices and tools to help get these practices in order for you to create more Secure pipelines.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/xfhLm8V.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/xfhLm8V.png" />
         <LabeledItem label="1">Access Control</LabeledItem>
 	    <SubBulletItem>Access control is a critical security measure for data pipelines in machine learning production environments because it helps to prevent unauthorized access to sensitive data and resources. By implementing access controls, such as role-based access, password policies, and multi-factor authentication, organizations can limit access to data pipelines to only authorized personnel, reducing the risk of data breaches and malicious attacks.</SubBulletItem>
         <Body>Now that we’ve understood why we need access control, let’s talk about how this can be done. Most ML production systems sit on the cloud and each cloud platform has their own Identity and Access Management (IAM system) in place. We could try and explain each of these here but all cloud providers have their own systems in place and tutorials to have this done, hence we have linked the tutorials for the 3 most famous cloud IAM systems here</Body>
@@ -208,19 +161,11 @@ export default function MachineLearning() {
         <Body>Well the answer to that is yes and no. This advice is a lot of best practices and anybody who works with cloud based systems could benefit from this advice. A lot of security issues can be resolved just by incorporating these types of practices in our everyday lives. This advice is very good for Data pipelines but at the end of the day, we haven’t really discussed machine learning specific threats yet have we? Well don’t fret…that’s coming up now.</Body>
         <SubSubSection>Machine Learning Specific Threats</SubSubSection>
         <Body>Ahh yes, the belle of the ball has arrived. Let’s talk about threats that are specific to Machine Learning Models. The advice above is tailored to data pipeline creation and preventing security threats to the Data center. Now however, it’s time to talk about something new…Something more ML based…Something where the consequences could be death…</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/NEKCzfW.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/NEKCzfW.png" />
         <Body>Take a look at the diagram above. These are the three types of Model attacks we are going to be discussing. For each of them, we will start off by explaining the attack followed by a walkthrough example of such an attack with the consequences, followed finally by the mitigation tactics that can be incorporated with links to tutorials for so many different ways to mitigate these threats. Let’s not dilly dally then… let’s get to it!</Body>
         <SubSubSection>Model Poisoning</SubSubSection>
         <Body>What an ominous sounding name. Model Poisoning. It’s not just ominous sounding but dangerous as well. Model poisoning is a type of adversarial attack on machine learning models that involves manipulating the training data used to develop the model. In a production ready ML system, model poisoning can occur when an attacker inserts malicious data into the training set, causing the model to learn incorrect or biased information. This can compromise the accuracy and reliability of the model, leading to incorrect predictions or other unintended consequences. This sounds a little complex…So let’s run through an example to understand this better.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/8hh0yTD.jpg" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/8hh0yTD.jpg" />
         <Body>I don’t know about you, but that sounds frightening. DAMN THESE ATTACKERS. But don’t worry because you have the unique opportunity to read this advice document and so you are going to find out all the ways to mitigate such a threat to the system.</Body>
         <SubSubSection>Model Poisoning Mitigation</SubSubSection>
 <LabeledItem label="1">Input Validation and Sanitization</LabeledItem>
@@ -254,11 +199,7 @@ export default function MachineLearning() {
 <Body>Whoosh… I feel safer already. Take these tactics to heart and implement them into your model pipelines soon! The tutorials shown here also showcase the best ways to do so and prevent an attack like model Poisoning. But wait… there’s more.</Body>
 <SubSubSection>Data Poisoning</SubSubSection>
 <Body>Wait a second, more poison? That’s right…data poisoning attacks are just as ominous sounding but also slightly different to the way model poisoning attacks work. They still deal with data but in a very different way. Data poisoning is an attack on machine learning models where an attacker introduces malicious data into the training set by means of inputs to the system, which can result in the model making incorrect predictions. In a production ready ML system, data poisoning can occur through various means, such as by introducing biased or false data, by exploiting vulnerabilities in the data pipeline, or by manipulating data inputs in real-time. Sounds a bit confusing and it isn’t that easy to tell how this is different from model poisoning right? But don’t worry…here’s an example to explain this better.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/2WCV3I6.jpg" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/2WCV3I6.jpg" />
         <Body>Oh My! This really is a big issue isn’t it…I’m really starting to hate these attackers you know. Recommendation systems are constant targets of such adversaries but don’t fret, we’re here to help you avoid this issue. Remember, you have the unique opportunity to read this advice document and so you are going to find out all the ways to mitigate such a threat to the system.</Body>
         <SubSubSection>Data Poisoning Mitigation</SubSubSection>
 <LabeledItem label="1">Input Validation and Sanitization</LabeledItem>
@@ -277,9 +218,9 @@ export default function MachineLearning() {
 <BulletItem><Hyperlink href="https://adtk.readthedocs.io/en/stable/" text="Arundo"/></BulletItem>
 <BulletItem><Hyperlink href="https://scikit-learn.org/stable/modules/outlier_detection.html" text="Sklearn Outlier Detection"/></BulletItem>
 <LabeledItem label="4">Data Augmentation</LabeledItem>
-	<SubBulletItem>Data augmentation is a technique for increasing the diversity and quantity of training data by generating new synthetic data from existing data. By augmenting the training data, organizations can reduce the impact of any malicious data inputs and increase the resilience of the recommendation system against data poisoning attacks. This can include techniques such as rotating, flipping, or scaling images, adding noise to audio files, or perturbing text data.</SubBulletItem>
-<Body>Now there are so many different types of data that we could be working with but we’ve compiled tools and libraries for data augmentation across the 3 most common ones (Image, Audio, and Text). We hope these come of use to you!</Body>
-<italic>Image Data</italic>
+	<SubBulletItem>Data augmentation is a technique for increasing the diversity and quantity of training data by generating new synthetic data from existing data. By augmenting the training data, organizations can reduce the impact of any malicious data inputs and increase the resilience of the recommendation system against data poisoning attacks. This can include techniques such as rotating, flipping, or scaling ArticleImages, adding noise to audio files, or perturbing text data.</SubBulletItem>
+<Body>Now there are so many different types of data that we could be working with but we’ve compiled tools and libraries for data augmentation across the 3 most common ones (ArticleImage, Audio, and Text). We hope these come of use to you!</Body>
+<italic>ArticleImage Data</italic>
 <BulletItem><Hyperlink href="https://imgaug.readthedocs.io/en/latest/" text="Imgaug"/></BulletItem>
 <BulletItem><Hyperlink href="https://docs.opencv.org/4.x/d7/d72/tutorial_transformations.html" text="OpenCV"/></BulletItem>
 <italic>Audio Data</italic>
@@ -291,11 +232,7 @@ export default function MachineLearning() {
 <Body>Wow… I just feel like I’m getting safer by the minute… Damn, the authors did a good job huh ;). Now though, we go to perhaps the most interesting attack of them all…the Evasion attack.</Body>
 <SubSubSection>Evasion Attacks</SubSubSection>
 <Body>Now this is an interesting name for an attack isn’t it…Evasion…What possibly could we be evading? Evasion attacks are a type of adversarial attack on AI/ML systems that involve modifying or manipulating data inputs to evade detection or classification by the system. In a production ready AI/ML system, evasion attacks can occur when attackers introduce subtle changes to the input data, such as adding noise, changing the contrast or brightness, or altering the color. This can cause the model to misclassify the input, leading to incorrect or unexpected results. Now this is where things begin to get murky isn’t it…How is this different from a Data Poisoning attack. Well, maybe this example will help.</Body>
-        <br></br>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <img src="https://i.imgur.com/I5n9dVl.png" alt="" loading="lazy" style={{ width: '650px', height: 'auto' }}/>
-            </div>
-        <br></br>
+        <ArticleImage src="https://i.imgur.com/I5n9dVl.png" />
         <Body>Still, can’t see the difference? Well, essentially, a Data Poisoning attack attempts to rework the way a system sorts or works and thus works well on recommendation systems. On the other hand, Evasion attacks solely try to get a system to misclassify an input. These attacks are dangerous and while the example above is a little more fun loving, the consequences of such an attack could be extremely dire. But don’t worry because, and for one final time, you have the unique opportunity to read this advice document and so you are going to find out all the ways to mitigate such a threat to the system.</Body>
         <SubSubSection>Adversarial Training as Mitigation</SubSubSection>
 <Body>Adversarial training is a technique for strengthening machine learning models against adversarial attacks… specifically evasion attacks as well. It involves inserting adversarial examples into the training data on purpose in order to help the model learn to recognize and respond to these types of attacks more effectively. Adversarial examples are generated by modifying existing data inputs in a way that may be undetectable to humans but causes the model to misclassify the input. This can include adding noise, adjusting the contrast or brightness, random smoothing of the inputs, changing the color of the input, and more.</Body>
@@ -323,7 +260,7 @@ export default function MachineLearning() {
 <Body>Lastly, for usage of the model, users should be able to opt out of automated systems in favor of alternatives in situations where they may face harmful consequences, be able to receive help in a timely manner and have a fallback process, whether it is automated or human involvement, and AI systems used in sensitive domains like education, employment, etc. should provide users training on how to interact with the system and be able to take in human considerations for adverse or high-risk decisions</Body>
 <SubSubSection>Conclusion</SubSubSection>
 <Body>Thanks for taking the time to go through our advice document. We know that there is definitely more information out there and each of these topics could have documents of their own but we hope that you enjoyed reading our document and more importantly learned a little more about Security and Privacy in AI and ML. We are confident that you are now capable of creating AI/ML systems with Security and Privacy and mind. Please leave any feedback you have for us in the Comment section below. (If this is a Medium Article/Blog :P)</Body>
-<References>Sources
+<References>
     <ReferenceItem label="1">https://arxiv.org/abs/2011.11819</ReferenceItem>
     <ReferenceItem label="2">https://www.researchgate.net/figure/Schematic-representation-of-a-black-box-and-a-white-box-method-inspired-by-11_fig5_280316613</ReferenceItem>
     <ReferenceItem label="3">https://blog.openmined.org/untitled-3/</ReferenceItem>

@@ -22,7 +22,7 @@ export default function BoardList() {
                             <div>
                                 <h5 className="mt-1 mb-1 text-xl">{boardMember.name}</h5>
                                 <h5 className="mt-1 mb-3 text-lg text-neutral-300">{boardMember.position}</h5>
-                                <p className="text-md mb-20 text-neutral-500">{boardMember.description}</p>
+                                <p className="text-md mb-20 text-neutral-400">{boardMember.description}</p>
                             </div>
                         </div>
                     </div>

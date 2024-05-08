@@ -1,5 +1,5 @@
 import { PencilLine } from "lucide-react";
-import { GraduationCap } from "lucide-react";
+import { Megaphone } from "lucide-react";
 import { Handshake } from "lucide-react";
 import { BookOpenCheck } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
@@ -13,7 +13,7 @@ export const featuresList = [
       "Support our informational hub that curates weekly cybersecurity content that breaks down technical jargon for everyday readers.",
   },
   {
-    icon: <Handshake />,
+    icon: <Megaphone />,
     text: "Discuss Ongoing Threats",
     description:
       "Join our weekly meetings to discuss ongoing topics in cybersecurity. From ransomware to evolving cybersecurity policy, ",
@@ -25,7 +25,7 @@ export const featuresList = [
       "During Cybersecurity Awareness Month, organize weekly newsletters to inform Northwestern faculty, students, and administration of ongoing threats and healthier, cyber hygiene practices.",
   },
   {
-    icon: <GraduationCap />,
+    icon: <Handshake />,
     text: "Join a Community of Learners",
     description:
       "Stay connected with the Northwestern security community and make new friends.",

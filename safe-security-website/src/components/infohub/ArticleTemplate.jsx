@@ -37,10 +37,10 @@ export default function ArticleTemplate() {
                     </h1>
 
                     <div className="w-full flex flex-col items-start pb-10 mb-10 border-b border-neutral-800">
-                        <h5 className="mt-1 mb-2 text-md">Published: <span className="text-md p-2 text-neutral-500">{articleInfo.publishDate}</span></h5>
-                        <h5 className="mt-1 mb-2 text-md">Authors: <span className="text-md p-2 text-neutral-500">{extractStrings(articleInfo.authors)}</span></h5>
-                        {articleInfo.contributors && <h5 className="mt-1 mb-2 text-md">Contributors: <span className="text-md p-2 text-neutral-500">{extractStrings(articleInfo.contributors)}</span></h5>}
-                        <h5 className="mt-1 mb-2 text-md">Tags: <span className="text-md p-2 text-neutral-500">{extractStrings(articleInfo.tags)}</span></h5>
+                        <h5 className="mt-1 mb-2 text-md">Published: <span className="text-md p-2 text-neutral-400">{articleInfo.publishDate}</span></h5>
+                        <h5 className="mt-1 mb-2 text-md">Authors: <span className="text-md p-2 text-neutral-400">{extractStrings(articleInfo.authors)}</span></h5>
+                        {articleInfo.contributors && <h5 className="mt-1 mb-2 text-md">Contributors: <span className="text-md p-2 text-neutral-400">{extractStrings(articleInfo.contributors)}</span></h5>}
+                        <h5 className="mt-1 mb-2 text-md">Tags: <span className="text-md p-2 text-neutral-400">{extractStrings(articleInfo.tags)}</span></h5>
                     </div>
 
                     {articleInfo.content}

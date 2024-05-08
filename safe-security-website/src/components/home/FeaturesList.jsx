@@ -21,7 +21,7 @@ export default function FeaturesList() {
                             </div>
                             <div>
                                 <h5 className="mt-1 mb-3 text-xl">{feature.text}</h5>
-                                <p className="text-md mb-20 text-neutral-500">{feature.description}</p>
+                                <p className="text-md mb-20 text-neutral-400">{feature.description}</p>
                             </div>
                         </div>
                     </div>

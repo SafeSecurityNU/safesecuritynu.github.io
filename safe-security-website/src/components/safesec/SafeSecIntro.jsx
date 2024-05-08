@@ -6,7 +6,7 @@ export default function SafeSecIntro() {
                     Meet the Board
                 </span>
             </h1>
-            <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+            <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
                 Safe Security's discussion-to-print model is led by our executive team. Externally, our educational team leads bi-weekly discussions and bi-weekly writing sessions. Our technology team updates the website and hosts intermittent technical trainings. Internally, our Directors of Marketing, Partnerships, and Community Engagement manage our social media presence, finances, and community events respectively.
                 <br></br>
                 <br></br>

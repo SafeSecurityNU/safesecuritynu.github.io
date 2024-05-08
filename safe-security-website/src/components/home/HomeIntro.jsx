@@ -13,7 +13,7 @@ export default function HomeIntro() {
             <h1 className="mx-8 text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
                 to protect public infrastructure 
             </h1>
-            <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+            <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
                 Safe Security is committed to expanding the accessibility to cybersecurity within the Northwestern community. By participating in this RSO, we hope for students to be able to learn more about cybersecurity, navigate the web safely, and ensure that members of our local communities also stay safe.
             </p>
             <div className="flex justify-center mt-10 mb-20">

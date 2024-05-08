@@ -24,11 +24,11 @@ export default function ArticlesList() {
                             </div>
                             <div>
                                 <h5 className="mt-1 mb-3 text-xl">{article.title}</h5>
-                                <p className="text-md mb-3 text-neutral-500">{article.description}</p>
-                                <h5 className="mt-1 mb-2 text-md">Published: <span className="text-md p-2 text-neutral-500">{article.publishDate}</span></h5>
-                                <h5 className="mt-1 mb-2 text-md">Authors: <span className="text-md p-2 text-neutral-500">{extractStrings(article.authors)}</span></h5>
-                                {article.contributors && <h5 className="mt-1 mb-2 text-md">Contributors: <span className="text-md p-2 text-neutral-500">{extractStrings(article.contributors)}</span></h5>}
-                                <h5 className="mt-1 mb-2 text-md">Tags: <span className="text-md p-2 text-neutral-500">{extractStrings(article.tags)}</span></h5>
+                                <p className="text-md mb-3 text-neutral-400">{article.description}</p>
+                                <h5 className="mt-1 mb-2 text-md">Published: <span className="text-md p-2 text-neutral-400">{article.publishDate}</span></h5>
+                                <h5 className="mt-1 mb-2 text-md">Authors: <span className="text-md p-2 text-neutral-400">{extractStrings(article.authors)}</span></h5>
+                                {article.contributors && <h5 className="mt-1 mb-2 text-md">Contributors: <span className="text-md p-2 text-neutral-400">{extractStrings(article.contributors)}</span></h5>}
+                                <h5 className="mt-1 mb-2 text-md">Tags: <span className="text-md p-2 text-neutral-400">{extractStrings(article.tags)}</span></h5>
                                 <p className="mx-1 mt-5 w-fit hover:bg-violet-950 rounded-full py-1 px-3 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500">
                                     View &gt;
                                 </p>

@@ -6,7 +6,7 @@ export default function InfoHubIntro() {
                     Information Hub
                 </span>
             </h1>
-            <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
+            <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
                 Welcome to Safe Security's informational hub. From elementary students to elderly residents, we hope that our Information Hub has at least one interesting article. Many of our materials have been previously provided to us by Professor Sruti Bhagavatula's class, Computer Science: 396/496, Foundations of Security. During Winter and Spring 2024, we worked to revise these materials to be more accessible through jargon-free language and explanation of complex topics. We invite you to read more about security or attend one of our meetings to discuss current events in cybersecurity. Happy reading!
             </p>
         </div>
