@@ -16,7 +16,7 @@ const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "safe-security",
+                path: "meet-the-board",
                 element: <SafeSecPage />,
             },
             {
