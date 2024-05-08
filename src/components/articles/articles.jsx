@@ -133,23 +133,23 @@ export const articlesList = [
     //     content: <RegularlyWork />,
     //     linkString: "security-advice-for-those-who-work-regularly-with-technology"
     // },
-    {
-        title: "Security and Privacy Education for Software Developers",
-        description: "Discover how to meaningfully secure your project as a software developer by applying security principles to your code.",
-        publishDate: "May 1st, 2024",
-        authors: [
-            "Huaxuan Chen"
-        ],
-        contributors: [
-            "Chloe Braswell"
-        ],
-        tags: [
-            "Software Development",
-        ],
-        icon: <Binary />,
-        content: <SoftwareDevelopers />,
-        linkString: "software-developers"
-    },
+    // {
+    //     title: "Security and Privacy Education for Software Developers",
+    //     description: "Discover how to meaningfully secure your project as a software developer by applying security principles to your code.",
+    //     publishDate: "May 1st, 2024",
+    //     authors: [
+    //         "Huaxuan Chen"
+    //     ],
+    //     contributors: [
+    //         "Chloe Braswell"
+    //     ],
+    //     tags: [
+    //         "Software Development",
+    //     ],
+    //     icon: <Binary />,
+    //     content: <SoftwareDevelopers />,
+    //     linkString: "software-developers"
+    // },
     // {
     //     title: "The Privacy and Security Guide for Tech Startups",
     //     description: "Learn the critical steps that early-stage technology-focused startups need to follow to safeguard against external security threats, ensure legal compliance, and avoid fines.",
