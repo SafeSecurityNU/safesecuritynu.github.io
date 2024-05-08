@@ -7,7 +7,7 @@ export default function InfoHubIntro() {
                 </span>
             </h1>
             <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Welcome to Safe Security's informational hub. From Safe Security's initial conception to final launch, we are driven to expand the accessibility to cybersecurity education for everyone and anyone. From elementary students to elderly residents, we hope that our Information Hub has at least one interesting article. Many of our materials have been previously provided to us by Professor Sruti Bhagavatula's class, Computer Science: 396/496, Foundations of Security. During Winter and Spring 2024, we worked to revise these materials to be more accessible through jargon-free language and explanation of complex topics. We invite you to read more about security or attend one of our meetings to discuss current events in cybersecurity. Happy reading!
             </p>
         </div>
     )

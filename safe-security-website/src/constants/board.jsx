@@ -12,14 +12,14 @@ export const boardList = [
         name: "Kris Yun",
         position: "President",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Kris is a Social Policy + CS major interested in the intersection of cybsersecurity and policy. Outside of Safe Security, she is involved in WildHacks and works at Shostack + Associates. Kris is excited for the future of Safe Security and meeting new people!",
     },
     {
         icon: <GraduationCap />,
         name: "Chloe Braswell",
         position: "Director of Education",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Chloe is a current sophomore studying computer science and economics. In her free time, she enjoys watching movies and trying new restaurants in downtown Evanston with her friends. She is so excited to be a part of Safe Security and watch our community grow this year!",
 
     },
     {
@@ -27,7 +27,7 @@ export const boardList = [
         name: "Bennett Lindberg",
         position: "Co-Director of Technology",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Bennett is a Computer Science major interested in systems and programming languages research as well as full-stack application development. While at Northwestern, he has served as a Peer Mentor for various courses, been involved with a startup at the Garage, and engaged in graduate-level research.",
 
     },
     {
@@ -35,7 +35,7 @@ export const boardList = [
         name: "Randy Truong",
         position: "Co-Director of Technology",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Randy is a 3rd year studying CS + Math. Randy likes coding and sushi, but mostly sushi.“",
 
     },
     {
@@ -43,7 +43,7 @@ export const boardList = [
         name: "Kaylie Mei",
         position: "Director of Marketing",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Kaylie is a CS + Statistics major from the Chicago area. In her free time (which is almost never), Kaylie enjoys reading and spending time with friends. Kaylie is very excited to see Safe Security grow from the ground up!",
 
     },
     {
@@ -51,7 +51,7 @@ export const boardList = [
         name: "Nandan Dhanesh",
         position: "Director of Partnerships",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Nandan is a CS + Econ major. Aside from Safe Security, Nandan is involved in SASA and Private Equity and Venture Capital. Nandan is a fan of basketball and bodybuilding and sometimes likes to cook.",
 
     },
     {
@@ -59,12 +59,12 @@ export const boardList = [
         name: "Eric Zhang",
         position: "Director of Community Engagement",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Eric is currently majoring in Computer Science and Mathematics, enjoys playing tennis, and has recently taken up playing Pokemon Go.",
     },{
         icon: <BookMarked />,
         name: "Dr. Sruti Bhagavatula",
-        position: "Northwestern University Faculty Sponsor",
+        position: "Northwestern University Faculty Advisor",
         description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Dr. Sruti Bhagavatula is an Assistant Professor in Computer Science at Northwestern University. Professor Bhagavatula is a leader in human-centered security and data privacy and is the lead curriculum designer of Foundations of Security. We are very grateful for all of her support.",
     },
 ];
