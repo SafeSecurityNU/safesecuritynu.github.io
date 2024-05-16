@@ -65,6 +65,6 @@ export const boardList = [
         name: "Dr. Sruti Bhagavatula",
         position: "Northwestern University Faculty Advisor",
         description:
-        "Dr. Sruti Bhagavatula is an Assistant Professor in Computer Science at Northwestern University. Professor Bhagavatula is a leader in human-centered security and data privacy and is the lead curriculum designer of Foundations of Security. We are very grateful for all of her support.",
+        "Dr. Sruti Bhagavatula is an Assistant Professor of Instruction in Computer Science at Northwestern University. Professor Bhagavatula is an expert in security education and human-centered security and privacy. Her research largely focuses on these topics related to various computing domains and she has also developed various security and privacy courses aimed at broadening security and privacy exposure at Northwestern. We are very grateful for all of her support.",
     },
 ];
