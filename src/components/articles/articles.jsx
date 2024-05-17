@@ -105,7 +105,7 @@ export const articlesList = [
             "Stephanie Yaur"
         ],
         contributors: [
-            "Ruhuma Tesfa"
+            "Ruhama Tesfa"
         ],
         tags: [
             "Mobile",
