@@ -1,5 +1,5 @@
 import WebDevelopers from "./WebDevelopers";
-import TechStartups from "./TechStartups";
+import StartUps from "./StartUps";
 import SoftwareDevelopers from "./SoftwareDevelopers";
 import SecurityCompromises from "./SecurityCompromises";
 import RegularlyWork from "./RegularlyWork";
@@ -115,57 +115,61 @@ export const articlesList = [
         content: <MobileUsage />,
         linkString: "security-and-privacy-for-everyday-mobile-usage"
     },
-    // {
-    //     title: "Security Advice for Those Who Work Regularly with Technology",
-    //     description: "Learn the most critical security and data privacy practices to be followed in an organization along with real-world examples of security problems.",
-    //     publishDate: "May 1st, 2024",
-    //     authors: [
-    //         "Nandipa Siluma",
-    //         "Preeti Subbiah"
-    //     ],
-    //     contributors: [
-    //         "Kris Yun"
-    //     ],
-    //     tags: [
-    //         "Organizations",
-    //     ],
-    //     icon: <Building2 />,
-    //     content: <RegularlyWork />,
-    //     linkString: "security-advice-for-those-who-work-regularly-with-technology"
-    // },
-    // {
-    //     title: "Security and Privacy Education for Software Developers",
-    //     description: "Discover how to meaningfully secure your project as a software developer by applying security principles to your code.",
-    //     publishDate: "May 1st, 2024",
-    //     authors: [
-    //         "Huaxuan Chen"
-    //     ],
-    //     contributors: [
-    //         "Chloe Braswell"
-    //     ],
-    //     tags: [
-    //         "Software Development",
-    //     ],
-    //     icon: <Binary />,
-    //     content: <SoftwareDevelopers />,
-    //     linkString: "software-developers"
-    // },
-    // {
-    //     title: "The Privacy and Security Guide for Tech Startups",
-    //     description: "Learn the critical steps that early-stage technology-focused startups need to follow to safeguard against external security threats, ensure legal compliance, and avoid fines.",
-    //     publishDate: "May 1st, 2024",
-    //     authors: [
-    //         "Dennis Wu",
-    //         "Abenezer Tamene",
-    //         "Han Lee"
-    //     ],
-    //     tags: [
-    //         "Startups",
-    //     ],
-    //     icon: <Boxes />,
-    //     content: <TechStartups />,
-    //     linkString: "the-privacy-and-security-guide-for-tech-startups"
-    // },
+    {
+        title: "Security Advice for Those Who Work Regularly with Technology",
+        description: "Learn the most critical security and data privacy practices to be followed in an organization along with real-world examples of security problems.",
+        publishDate: "May 1st, 2024",
+        authors: [
+            "Nandipa Siluma",
+            "Preeti Subbiah"
+        ],
+        contributors: [
+            "Kris Yun"
+        ],
+        tags: [
+            "Organizations",
+        ],
+        icon: <Building2 />,
+        content: <RegularlyWork />,
+        linkString: "security-advice-for-those-who-work-regularly-with-technology"
+    },
+    {
+        title: "Security and Privacy Education for Software Developers",
+        description: "Discover how to meaningfully secure your project as a software developer by applying security principles to your code.",
+        publishDate: "May 1st, 2024",
+        authors: [
+            "Huaxuan Chen"
+        ],
+        contributors: [
+            "Chloe Braswell",
+            "Kris Yun"
+        ],
+        tags: [
+            "Software Development",
+        ],
+        icon: <Binary />,
+        content: <SoftwareDevelopers />,
+        linkString: "software-developers"
+    },
+    {
+        title: "The Privacy and Security Guide for Tech Startups",
+        description: "Learn the critical steps that early-stage technology-focused startups need to follow to safeguard against external security threats, ensure legal compliance, and avoid fines.",
+        publishDate: "May 1st, 2024",
+        authors: [
+            "Dennis Wu",
+            "Abenezer Tamene",
+            "Han Lee"
+        ],
+        contributors: [
+            "Kris Yun"
+        ],
+        tags: [
+            "Startups",
+        ],
+        icon: <Boxes />,
+        content: <StartUps />,
+        linkString: "the-privacy-and-security-guide-for-tech-startups"
+    },
     // {
     //     title: "Security and Privacy for Web Developers",
     //     description: "A guide to implementing security and privacy features for individuals who are familiar with how to develop we applications but are unfamiliar with the security concerns of web applications.",

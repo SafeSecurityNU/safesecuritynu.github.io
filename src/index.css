@@ -4,10 +4,26 @@
 
 :root {
     font-family: "Poppins", sans-serif;
+    background-color: #121113;
     color-scheme: dark;
     scrollbar-width: none;
 }
 
 .customShadow {
     box-shadow: 0 0 70px rgba(8, 7, 13, 1);
+}
+
+.video-scale {
+    width: 1450px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.object-cover {
+    object-fit: cover;
+}
+.relative {
+    position: relative;
+}
+.overflow-hidden {
+    overflow: hidden;
 }

@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 import { articlesList } from "../articles/articles";
 
 function extractStrings(arr) {
@@ -19,7 +18,7 @@ export default function ArticlesList() {
                 {articlesList.map((article, index) => (
                     <div key={index} className="w-full lg:w-[40%] mx-3 p-3 rounded-lg hover:bg-neutral-900" onClick={() => {window.scrollTo({ top: 0, left: 0, behavior: "instant" }); navigate(`./article/${article.linkString}`)}}>
                         <div className="flex">
-                            <div className="flex ml-3 mr-6 mt-1 h-10 w-10 p-2 bg-neutral-900 text-blue-700 justify-center items-center rounded-full">
+                            <div className="flex ml-3 mr-6 mt-1 h-10 w-10 p-2 bg-neutral-900 text-[#6529A7] justify-center items-center rounded-full">
                                 {article.icon}
                             </div>
                             <div>

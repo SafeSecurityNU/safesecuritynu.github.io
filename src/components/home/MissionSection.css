@@ -1,0 +1,29 @@
+.mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    color: #ffffff;
+    height: 100vh; /* Adjust the height as needed */
+    margin: 0; /* Ensure no margin */
+    padding: 0; 
+}
+
+.mission-content {
+    background: linear-gradient(135deg, #9EC1F6, #6529A7); /* Adjust the background gradient as needed */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+}
+
+.mission-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mission-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
