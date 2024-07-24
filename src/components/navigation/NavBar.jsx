@@ -63,7 +63,7 @@ export default function NavBar() {
         <nav className="navbar sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 font-semibold">
             <div className="container flex justify-between items-center">
                 <div className="logo">
-                    <img src="/src/assets/safesecurity favicon.png" alt="Safe Security Logo" className="cursor-pointer" onClick={() => navigate("/")} />
+                    <img src="./src/assets/safesecurity favicon.png" alt="Safe Security Logo" className="cursor-pointer" onClick={() => navigate("/")} />
                 </div>
                 <div className="hidden lg:flex justify-center items-center">
                     <ul className="nav-items flex mx-10 space-x-12">
