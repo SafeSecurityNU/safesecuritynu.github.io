@@ -36,7 +36,7 @@ export default function HomeIntro() {
                 <div className="mt-10 mb-70">
                     <video
                         ref={videoRef}
-                        src="./src/assets/safesecmovie.mp4"
+                        src="../assets/safesecmovie.mp4"
                         className="video-scale"
                         autoPlay
                         muted
