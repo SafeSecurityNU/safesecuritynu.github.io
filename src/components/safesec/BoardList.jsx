@@ -5,7 +5,7 @@ export default function BoardList() {
         <div id="features" className="relative mt-20 pb-20"> 
             <div className="text-center">
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-                    2024 Safe Security 
+                    2024-25 Safe Security 
                     <span className="bg-gradient-to-r from-[#6529A7] to-[#9EC1F6] text-transparent bg-clip-text">
                         {" "}
                         Board
@@ -16,7 +16,7 @@ export default function BoardList() {
                 {boardList.map((boardMember, index) => (
                     <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
                         <div className="bg-neutral-900 rounded-lg shadow-lg overflow-hidden">
-                            <div className="relative w-full h-100"> 
+                            <div className="image-container">
                                 <img src={boardMember.imgSrc} alt={boardMember.name} className="object-cover w-full h-full"/>
                             </div>
                             <div className="p-6">

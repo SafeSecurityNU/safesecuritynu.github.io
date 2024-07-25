@@ -4,8 +4,10 @@ import chloe from '/src/assets/chloe.jpeg';
 import bennett from '/src/assets/bennett.png';
 import randy from '/src/assets/randy.jpeg';
 import kaylie from '/src/assets/kaylie.jpg';
+import maya from '/src/assets/maya.jpg'
 import nandan from '/src/assets/nandan.jpeg';
 import eric from '/src/assets/eric.jpeg';
+import jj from '/src/assets/jj.jpg';
 import sruti from '/src/assets/sruti.jpg';
 
 export const boardList = [
@@ -40,9 +42,16 @@ export const boardList = [
     {
         icon: <Instagram />,
         name: "Kaylie Mei",
-        position: "Director of Marketing",
+        position: "Co-Director of Marketing",
         description: "Kaylie is a Computer Science + Statistics major. She is thrilled to be a part of Safe Security and contribute to its mission.",
         imgSrc: kaylie
+    },
+    {
+        icon: <Instagram />,
+        name: "Maya Ramaswamy",
+        position: "Co-Director of Marketing",
+        description: "Maya is a Mechanical Engineering major + Machine Learning and Data Science minor. In her free time, Maya is a part of the Society of Women Engineers (SWE) and The Women’s Network (TWN). She is thrilled to be a part of and see the amazing things to come for Safe Security!",
+        imgSrc: maya
     },
     {
         icon: <BadgeDollarSign />,
@@ -54,9 +63,16 @@ export const boardList = [
     {
         icon: <Handshake />,
         name: "Eric Zhang",
-        position: "Director of Community Engagement",
+        position: "Co-Director of Community Engagement",
         description: "Eric is a Computer Science and Mathematics major who enjoys playing tennis, and has recently taken up playing Pokemon Go.",
         imgSrc: eric
+    },
+    {
+        icon: <Handshake />,
+        name: "Janelys Graciano",
+        position: "Co-Director of Community Engagement",
+        description: "Janelys Graciano is a Computer Science + Data Science Minor. She is an amateur cinephile and a baking enthusiast. Janelys is passionate about advancing the role of women in STEM spaces. She's excited to see the Safe Security community flourish.",
+        imgSrc: jj
     },
     {
         icon: <BookMarked />,
