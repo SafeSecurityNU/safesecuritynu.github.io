@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import video from '/src/assets/safesecmovie.mp4';
+
 
 export default function HomeIntro() {
     const navigate = useNavigate();
@@ -36,7 +38,7 @@ export default function HomeIntro() {
                 <div className="mt-10 mb-70">
                     <video
                         ref={videoRef}
-                        src="../assets/safesecmovie.mp4"
+                        src={video}
                         className="video-scale"
                         autoPlay
                         muted

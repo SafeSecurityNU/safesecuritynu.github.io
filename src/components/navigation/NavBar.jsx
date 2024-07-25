@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { navBarItems } from "../../constants/navigation";
-import './NavBar.css'; 
+import './NavBar.css';
+import favicon from '/src/assets/safesecurityfavicon.png';
 
 export default function NavBar() {
     const navigate = useNavigate();
@@ -59,11 +60,16 @@ export default function NavBar() {
         }, 200); // Delay to allow moving the mouse to the dropdown
     };
 
+    const closeMobileDrawer = () => {
+        setMobileDrawerOpen(false);
+        setDropdownOpen(null);
+    };
+
     return (
         <nav className="navbar sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80 font-semibold">
             <div className="container flex justify-between items-center">
                 <div className="logo">
-                    <img src="./src/assets/safesecurity favicon.png" alt="Safe Security Logo" className="cursor-pointer" onClick={() => navigate("/")} />
+                    <img src={favicon} alt="Safe Security Logo" className="cursor-pointer" onClick={() => navigate("/")} />
                 </div>
                 <div className="hidden lg:flex justify-center items-center">
                     <ul className="nav-items flex mx-10 space-x-12">
@@ -150,39 +156,35 @@ export default function NavBar() {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 bg-[#1A1922] border-b border-neutral-700/80 w-full p-7 lg:hidden">
-                        <ul className="flex flex-col justify-center items-center">
+                    <div className="mobile-nav fixed inset-0 z-20 bg-[#1A1922] border-b border-neutral-700/80 w-full p-7 lg:hidden">
+                        <ul className="flex flex-col justify-center items-center space-y-4">
                             {navBarItems.map((item, index) => (
-                                <li key={index} className="relative">
+                                <li key={index} className="relative w-full">
                                     {item.children ? (
                                         <>
                                             <span
-                                                className={`hover:text-gray-400 cursor-pointer ${
+                                                className={`block w-full text-center hover:text-gray-400 cursor-pointer ${
                                                     currentPage === item.label
                                                         ? "bg-gradient-to-r from-blue-300 to-purple-600 hover:from-blue-400 hover:to-purple-700 text-transparent bg-clip-text"
                                                         : ""
                                                 }`}
-                                                onClick={() => handleDropdownOpen(index)}
+                                                onClick={() => {
+                                                    setDropdownOpen(dropdownOpen === index ? null : index);
+                                                }}
                                             >
                                                 {item.label}
                                             </span>
                                             {dropdownOpen === index && (
                                                 <ul
-                                                    className="mt-2 bg-white shadow-lg border border-gray-200"
-                                                    onMouseEnter={() => handleDropdownOpen(index)}
-                                                    onMouseLeave={() => handleDropdownClose()}
+                                                    className="mt-2 bg-[#1A1922] shadow-lg border border-gray-200 w-full"
+                                                    onMouseLeave={() => setDropdownOpen(null)}
                                                 >
                                                     {item.children.map((child, childIndex) => (
                                                         <li
                                                             key={childIndex}
-                                                            className="hover:bg-gray-100 px-4 py-2"
+                                                            className="hover:bg-purple-800 px-4 py-2 text-center"
                                                             onClick={() => {
-                                                                toggleNavBar();
-                                                                window.scrollTo({
-                                                                    top: 0,
-                                                                    left: 0,
-                                                                    behavior: "instant",
-                                                                });
+                                                                closeMobileDrawer();
                                                                 navigate(`${item.linkSuffix}${child.linkSuffix}`);
                                                             }}
                                                         >
@@ -194,7 +196,7 @@ export default function NavBar() {
                                         </>
                                     ) : (
                                         <span
-                                            className={`hover:text-gray-400 cursor-pointer ${
+                                            className={`block w-full text-center hover:text-gray-400 cursor-pointer ${
                                                 currentPage === item.label
                                                     ? "bg-gradient-to-r from-blue-300 to-purple-600 hover:from-blue-400 hover:to-purple-700 text-transparent bg-clip-text"
                                                     : ""
@@ -203,8 +205,7 @@ export default function NavBar() {
                                                 if (item.linkSuffix.startsWith("mailto:")) {
                                                     window.location.href = item.linkSuffix;
                                                 } else {
-                                                    toggleNavBar();
-                                                    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+                                                    closeMobileDrawer();
                                                     navigate(`${item.linkSuffix}`);
                                                 }
                                             }}
@@ -215,7 +216,7 @@ export default function NavBar() {
                                 </li>
                             ))}
                             <li>
-                                <button className="contact-us-button-mobile" onClick={() => window.location.href = "mailto:safesecnu@gmail.com"}>
+                                <button className="contact-us-button-mobile w-full text-center" onClick={() => window.location.href = "mailto:safesecnu@gmail.com"}>
                                     Contact Us
                                 </button>
                             </li>
