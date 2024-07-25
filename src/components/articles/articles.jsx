@@ -170,21 +170,25 @@ export const articlesList = [
         content: <StartUps />,
         linkString: "the-privacy-and-security-guide-for-tech-startups"
     },
-    // {
-    //     title: "Security and Privacy for Web Developers",
-    //     description: "A guide to implementing security and privacy features for individuals who are familiar with how to develop we applications but are unfamiliar with the security concerns of web applications.",
-    //     publishDate: "May 1st, 2024",
-    //     authors: [
-    //         "Maya Lundell",
-    //         "Sophie Rollins",
-    //         "Mason Naung"
-    //     ],
-    //     tags: [
-    //         "Web",
-    //         "Software Development",
-    //     ],
-    //     icon: <LayoutTemplate />,
-    //     content: <WebDevelopers />,
-    //     linkString: "security-and-privacy-for-web-developers"
-    // },
+    {
+        title: "Security and Privacy for Web Developers",
+        description: "A guide to implementing security and privacy features for individuals who are familiar with how to develop we applications but are unfamiliar with the security concerns of web applications.",
+        publishDate: "May 1st, 2024",
+        authors: [
+            "Maya Lundell",
+            "Sophie Rollins",
+            "Mason Naung"
+        ],
+        contributors: [
+            "Kris Yun",
+            "Maya Ramaswamy"
+        ],
+        tags: [
+            "Web",
+            "Software Development",
+        ],
+        icon: <LayoutTemplate />,
+        content: <WebDevelopers />,
+        linkString: "security-and-privacy-for-web-developers"
+    },
 ]
