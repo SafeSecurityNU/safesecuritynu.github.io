@@ -15,20 +15,20 @@ import SubSubSubSection from "../text/SubSubSubSection";
 import ReferenceItem from "../text/ReferenceItem";
 import BulletItem from "../text/BulletItem";
 import ArticleImage from "../text/ArticleImage";
-import Code from "/src/assets/webdev1.png"
-import Code2 from "/src/assets/webdev2.png"
-import Code3 from "/src/assets/webdev3.png"
-import Code4 from "/src/assets/webdev4.png"
-import Code5 from "/src/assets/webdev5.png"
-import Code6 from "/src/assets/webdev6.png"
-import Code7 from "/src/assets/webdev7.png"
-import Code8 from "/src/assets/webdev8.png"
-import Code9 from "/src/assets/webdev9.png"
-import Code10 from "/src/assets/webdev10.png"
-import Code11 from "/src/assets/webdev11.png"
-import Code12 from "/src/assets/webdev12.png"
-import Code13 from "/src/assets/webdev13.png"
-import Code14 from "/src/assets/webdev14.png"
+import Code from '/src/assets/webdev1.png';
+import Code2 from '/src/assets/webdev2.png';
+import Code3 from '/src/assets/webdev3.png';
+import Code4 from '/src/assets/webdev4.png';
+import Code5 from '/src/assets/webdev5.png';
+import Code6 from '/src/assets/webdev6.png';
+import Code7 from '/src/assets/webdev7.png';
+import Code8 from '/src/assets/webdev8.png';
+import Code9 from '/src/assets/webdev9.png';
+import Code10 from '/src/assets/webdev10.png';
+import Code11 from '/src/assets/webdev11.png';
+import Code12 from '/src/assets/webdev12.png';
+import Code13 from '/src/assets/webdev13.png';
+import Code14 from '/src/assets/webdev14.png';
 
 export default function WebDevelopers() {
     return (
