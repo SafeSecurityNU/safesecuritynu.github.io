@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 
 import App from "./App.jsx";
 import HomePage from "./components/pages/HomePage.jsx";
@@ -13,7 +13,7 @@ import OurModelPage from "./components/pages/OurModelPage.jsx";
 import CorporatePartnershipsPage from "./components/pages/CorporatePartnershipsPage.jsx";
 import ApplicationPage from "./components/pages/ApplicationPage.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App />,
