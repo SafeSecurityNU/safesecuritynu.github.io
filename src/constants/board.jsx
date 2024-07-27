@@ -9,6 +9,8 @@ import nandan from '/src/assets/nandan.jpeg';
 import eric from '/src/assets/eric.jpeg';
 import jj from '/src/assets/jj.jpg';
 import sruti from '/src/assets/sruti.jpg';
+import louis from '/src/assets/louis.jpeg';
+
 
 export const boardList = [
     {
@@ -21,9 +23,16 @@ export const boardList = [
     {
         icon: <GraduationCap />,
         name: "Chloe Braswell",
-        position: "Director of Education",
+        position: "Co-Director of Education",
         description: "Chloe is a Computer Science + Economics major. In her free time, she enjoys watching movies and trying new restaurants in downtown Evanston with her friends. She is so excited to be a part of Safe Security and watch our community grow this year!",
         imgSrc: chloe
+    },
+    {
+        icon: <GraduationCap />,
+        name: "Louis Chavey",
+        position: "Co-Director of Education",
+        description: "Louis is a Junior majoring in Computer Science and Cognitive Science. Aside from Safe Security, he is a NLP researcher, developer for Garage startups, and a member of KTP. More interestingly, he likes to windsurf, thrift, play and watch basketball (especially the Sacramento Kings), listen to music, and read.",
+        imgSrc: louis
     },
     {
         icon: <Laptop />,
