@@ -7,7 +7,7 @@ export default function CorporatePartnershipsIntro() {
                 </span>
             </h1>
             <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
-                In order to accomplish our mission, we need your support. We hope to partner with corporate businesses or small businesses like you!
+                In order to accomplish our mission, we need <strong>your support</strong>. We hope to partner with corporate businesses or small businesses like you!
             </p>
         </div>
     )

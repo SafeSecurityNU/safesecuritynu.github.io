@@ -42,3 +42,16 @@
     height: 100%;
     object-fit: cover; /* Cover the entire container */
 }
+
+.plain-text {
+    color: #9CA3AF; /* Grey color similar to other text */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #6529A7, #9EC1F6);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
