@@ -2,7 +2,7 @@ export default function FeatureCard({ side, title, action, description, imgSourc
     return (
         <>
             {side === "left" ? (
-                <div className="relative border-b border-neutral-800 py-24 px-4">
+                <div className="relative border-neutral-800 py-24 px-4">
                     <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-4">
                         <img
                             className="customShadow w-[550px] mx-auto my-2 align-middle rounded-2xl"
@@ -23,7 +23,7 @@ export default function FeatureCard({ side, title, action, description, imgSourc
                     </div>
                 </div>
             ) : (
-                <div className="relative border-b border-neutral-800 py-24 px-4">
+                <div className="relative border-neutral-800 py-24 px-4">
                     <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-4 items-center">
                         <div className="flex flex-col justify-center order-2 md:order-1">
                             <p className="text-2xl sm:text-4xl lg:text-5xl tracking-wide bg-gradient-to-r from-[#6529A7] to-[#9EC1F6] text-transparent bg-clip-text">
