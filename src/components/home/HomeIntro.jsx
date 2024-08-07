@@ -28,7 +28,7 @@ export default function HomeIntro() {
         <div className="flex flex-col items-center mt-6 lg:mt-20">
             <div className="flex flex-col items-center mt-10 lg:mt-20 text-center">
                 <h1 className="mx-8 text-5xl sm:text-7xl lg:text-8xl tracking-wide">
-                    <span className="bg-gradient-to-r from-blue-300 to-purple-800 text-transparent bg-clip-text">
+                    <span className="bg-gradient-to-r from-blue-300 to-purple-800 text-transparent bg-clip-text font-bold">
                         SAFE SECURITY
                     </span>
                 </h1>
