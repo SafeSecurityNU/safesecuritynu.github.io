@@ -3,15 +3,15 @@ import { createHashRouter, Navigate } from "react-router-dom";
 import App from "./App.jsx";
 import HomePage from "./components/pages/HomePage.jsx";
 import SafeSecPage from "./components/pages/SafeSecPage.jsx";
-import GeneralMeetingsPage from "./components/pages/GeneralMeetingsPage.jsx";
-import CommunityEventsPage from "./components/pages/CommunityEventsPage.jsx";
-import WorkshopsPage from "./components/pages/WorkshopsPage.jsx";
+import GeneralMeetingsPage from "./components/pages/students/GeneralMeetingsPage.jsx";
+import CommunityEventsPage from "./components/pages/students/CommunityEventsPage.jsx";
+import WorkshopsPage from "./components/pages/students/WorkshopsPage.jsx";
 import InfoHubPage from "./components/pages/InfoHubPage.jsx";
 import ArticleTemplate from "./components/infohub/ArticleTemplate.jsx";
-import ClinicPage from "./components/pages/ClinicPage.jsx";
-import OurModelPage from "./components/pages/OurModelPage.jsx";
-import CorporatePartnershipsPage from "./components/pages/CorporatePartnershipsPage.jsx";
-import ApplicationPage from "./components/pages/ApplicationPage.jsx";
+import ClinicPage from "./components/pages/clinics/ClinicPage.jsx";
+import OurModelPage from "./components/pages/clinics/OurModelPage.jsx";
+import CorporatePartnershipsPage from "./components/pages/clinics/CorporatePartnershipsPage.jsx";
+import ApplicationPage from "./components/pages/clinics/ApplicationPage.jsx";
 
 const router = createHashRouter([
     {

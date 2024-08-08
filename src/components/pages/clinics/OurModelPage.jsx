@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import lostImage from '/src/assets/lostImage.png'; // Adjust the path according to your file structure
-import FeatureCard from '../home/FeatureCard';
-import OurModelIntro from '../clinic/OurModelIntro';
-import Partnerships from '../../assets/partnerships.png'
-import Teamwork from '../../assets/teamwork.png'
-import Certification from '../../assets/Certification.png'
-import Application from '../../assets/Application.png'
+import FeatureCard from '../../home/FeatureCard';
+import OurModelIntro from '../../clinic/OurModelIntro';
+import Partnerships from '../../../assets/partnerships.png'
+import Teamwork from '../../../assets/teamwork.png'
+import Certification from '../../../assets/Certification.png'
+import Application from '../../../assets/Application.png'
 
 // export default function OurModelPage() {
 //     return (

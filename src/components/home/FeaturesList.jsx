@@ -2,7 +2,7 @@ import { featuresList } from "../../constants/features";
 
 export default function FeaturesList() {
     return (
-        <div id="features" className="relative mt-20 border-b border-neutral-800 py-28"> 
+        <div id="features" className="relative mt-10 border-b border-neutral-800 py-8"> 
             <div className="text-center">
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
                     What 
