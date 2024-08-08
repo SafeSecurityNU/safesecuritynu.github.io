@@ -8,7 +8,7 @@ export default function FeaturesList() {
                     What 
                     <span className="bg-gradient-to-r from-[#6529A7] to-[#9EC1F6] text-transparent bg-clip-text">
                         {" "}
-                        we do
+                        We Do
                     </span>
                 </h2>
             </div>

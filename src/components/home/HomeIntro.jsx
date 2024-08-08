@@ -35,7 +35,7 @@ export default function HomeIntro() {
                 <h2 className="text-xl lg:text-3xl mt-2">
                     ACCESSIBLE-IZING CYBERSECURITY
                 </h2>
-                <div className="mt-10 mb-70">
+                <div className="mt-32 mb-70">
                     <video
                         ref={videoRef}
                         src={video}
