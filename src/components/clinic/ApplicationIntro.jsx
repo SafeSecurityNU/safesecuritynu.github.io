@@ -16,7 +16,7 @@ export default function ApplicationIntro() {
 
             <div className='mt-5 mb-10 p-8 w-[45rem] h-[30rem] border border-neutral-400 shadow-[0_0_18px_rgba(255,255,255,0.5)] rounded-lg'>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl text-center tracking-wide pt-2 mt-4 pb-1">
-                    Become a member of Northwestern's first ever cybersecurity clinic
+                Become a member of the Chicago area’s premier cybersecurity clinic
                 </h2>
                 <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
                 Are you interested in joining the clinic?
