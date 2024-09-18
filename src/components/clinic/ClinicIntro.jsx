@@ -1,7 +1,8 @@
-import { useNavigate, useLocation, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function ClinicIntro() {
     const navigate = useNavigate();
+
     return (
         <div className="flex flex-col items-center mt-20 pb-20 pt-20"> {/* Increased top and bottom padding */}
             <h1 className="mx-8 text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
