@@ -1,6 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CorporatePartnershipsIntro from '../../clinic/CorporatePartnershipsIntro'; // Adjust the path according to your file structure
+import CorporatePartnershipsIntro from '../../clinic/CorporatePartnershipsIntro';
 import CorporatePartnershipsInterest from '../../clinic/CorporatePartnershipsInterest';
 
 export default function CorporatePartnershipsPage() {

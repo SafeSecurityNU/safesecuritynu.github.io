@@ -14,7 +14,7 @@ export default function SafeSecIntro() {
             </p>
             <div className="flex justify-center mt-10">
                 <a 
-                    className="mx-1 mt-5 w-fit hover:bg-violet-950 rounded-full py-1 px-3 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500" 
+                    className="mx-1 mt-5 w-fit hover:bg-violet-950 rounded-full py-2 px-4 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500 text-lg" 
                     onClick={(event) => {window.open('mailto:safesecnu@gmail.com', 'mail'); event.preventDefault()}} 
                     href="mailto:safesecnu@gmail.com"
                 >

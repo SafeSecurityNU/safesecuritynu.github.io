@@ -28,7 +28,7 @@ export default function ArticleTemplate() {
         <>
             <div className="w-full flex flex-row justify-center pb-20 border-b border-neutral-800">
                 <div className="flex flex-col mt-6 lg:mt-20 lg:w-[60%] md:w-[80%] w-[90%]">
-                    <p className="mx-1 mb-10 w-fit hover:bg-violet-950 rounded-full py-1 px-3 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500" onClick={() => {window.scrollTo({ top: 0, left: 0, behavior: "instant" }); navigate("/information-hub")}}>
+                    <p className="cursor-pointer mx-1 mb-10 w-fit hover:bg-violet-950 rounded-full py-1 px-3 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500" onClick={() => {window.scrollTo({ top: 0, left: 0, behavior: "instant" }); navigate("/information-hub")}}>
                         &lt; Go Back
                     </p>
 
