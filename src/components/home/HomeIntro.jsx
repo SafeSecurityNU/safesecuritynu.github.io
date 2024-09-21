@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import video from '/src/assets/safesecmovie.mp4';
+// import video from '/src/assets/safesecmovie.mp4';
+import video from '/src/assets/safesecmovie.mov';
 
 
 export default function HomeIntro() {
@@ -13,7 +14,7 @@ export default function HomeIntro() {
             video.addEventListener("ended", () => {
                 video.pause();
                 video.setAttribute("style", "object-fit: cover;");
-                video.currentTime = video.duration - 0.4; // Ensure the last frame is shown
+                video.currentTime = video.duration - 0.1; // Ensure the last frame is shown
             });
         }
 
