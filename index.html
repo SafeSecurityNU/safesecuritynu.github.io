@@ -18,12 +18,15 @@
       gtag('js', new Date());
 
       gtag('config', 'G-8Z3RJTM7Z5');
-      
-      window.addEventListener('hashchange', function() {
+
+      // Check if the user opens the page directly with #/qr-code
+      if (window.location.hash === '#/qr-code') {
         gtag('config', 'G-8Z3RJTM7Z5', {
-          'page_path': location.pathname + location.search + location.hash
+          'page_path': location.pathname + location.search + location.hash,
+          'event_label': 'Direct QR Code Page Load'
         });
-      });
+      }
+
     </script>
 
   </head>
