@@ -32,7 +32,7 @@ export default function ApplicationIntro() {
 
                 
 
-                <div className="flex justify-center mt-3 lg:pt-5">
+                <div className="flex justify-center mt-3">
                     <div 
                         className="cursor-pointer mx-2 mt-6 w-fit hover:bg-violet-950 rounded-full py-2 px-4 border-[1px] border-violet-400 hover:border-violet-500 text-violet-400 hover:text-violet-500 text-lg" 
                         onClick={(event) => { window.open('https://docs.google.com/forms/d/e/1FAIpQLSfPY0edJuy_JYV7TZh4jik86TSR20RJaXR1qSI9j5oWYHnkhg/viewform?usp=sf_link', '_blank', 'noopener,noreferrer'); }}
