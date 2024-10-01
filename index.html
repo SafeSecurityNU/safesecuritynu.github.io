@@ -9,7 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
     <link rel="icon" href="./src/assets/safesecurityfavicon.png" type="image/png">
-</head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z3RJTM7Z5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8Z3RJTM7Z5');
+
+      // Check if the user opens the page directly with #/qr-code
+      if (window.location.hash === '#/qr-code') {
+        gtag('config', 'G-8Z3RJTM7Z5', {
+          'page_path': location.pathname + location.search + location.hash,
+          'event_label': 'Direct QR Code Page Load'
+        });
+      }
+
+    </script>
+
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

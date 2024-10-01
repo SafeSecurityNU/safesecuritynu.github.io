@@ -7,7 +7,7 @@ export const navBarItems = [
         label: "Students",
         linkSuffix: "/students", 
         children: [
-            {label: "General Meetings", linkSuffix: "/general-meetings"},
+            {label: "Students Overview", linkSuffix: "/"},
             {label: "Community Events", linkSuffix: "/community-events"},
             {label: "Workshops", linkSuffix: "/workshops"},
         ],
@@ -17,6 +17,7 @@ export const navBarItems = [
         label: "Clinic",
         linkSuffix: "/clinic",
         children: [
+            {label: "Clinic Overview", linkSuffix: "/"},
             {label: "Our Model", linkSuffix: "/our-model"},
             {label: "Corporate Partnerships", linkSuffix: "/corporate-partnerships"},
             {label: "Application", linkSuffix: "/application"},

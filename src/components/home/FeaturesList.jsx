@@ -2,7 +2,7 @@ import { featuresList } from "../../constants/features";
 
 export default function FeaturesList() {
     return (
-        <div id="features" className="relative mt-10 border-b border-neutral-800 py-8"> 
+        <div id="features" className="relative mt-16 border-b border-neutral-800 py-8"> 
             <div className="text-center">
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
                     What 
@@ -14,7 +14,7 @@ export default function FeaturesList() {
             </div>
             <div className="flex flex-wrap mt-10 lg:mt-20 justify-center">
                 {featuresList.map((feature, index) => (
-                    <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 mb-10">
+                    <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4">
                         <div className="flex">
                             <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-[#6529A7] justify-center items-center rounded-full">
                                 {feature.icon}

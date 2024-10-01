@@ -2,13 +2,14 @@ import { createHashRouter, Navigate } from "react-router-dom";
 
 import App from "./App.jsx";
 import HomePage from "./components/pages/HomePage.jsx";
+import QrCodePage from "./components/pages/QrCodePage.jsx";
 import SafeSecPage from "./components/pages/SafeSecPage.jsx";
-import GeneralMeetingsPage from "./components/pages/students/GeneralMeetingsPage.jsx";
+import StudentsOverviewPage from "./components/pages/students/StudentsOverviewPage.jsx";
 import CommunityEventsPage from "./components/pages/students/CommunityEventsPage.jsx";
 import WorkshopsPage from "./components/pages/students/WorkshopsPage.jsx";
 import InfoHubPage from "./components/pages/InfoHubPage.jsx";
 import ArticleTemplate from "./components/infohub/ArticleTemplate.jsx";
-import ClinicPage from "./components/pages/clinics/ClinicPage.jsx";
+import ClinicOverviewPage from "./components/pages/clinics/ClinicOverviewPage.jsx";
 import OurModelPage from "./components/pages/clinics/OurModelPage.jsx";
 import CorporatePartnershipsPage from "./components/pages/clinics/CorporatePartnershipsPage.jsx";
 import ApplicationPage from "./components/pages/clinics/ApplicationPage.jsx";
@@ -23,16 +24,16 @@ const router = createHashRouter([
                 element: <HomePage />,
             },
             {
+                path: "qr-code",
+                element: <QrCodePage />,
+            },
+            {
                 path: "meet-the-board",
                 element: <SafeSecPage />,
             },
             {
                 path: "students",
-                element: <Navigate to="/students/general-meetings" replace={true} />, // Redirect /students to /students/general-meetings
-            },
-            {
-                path: "students/general-meetings",
-                element: <GeneralMeetingsPage />,
+                element: <StudentsOverviewPage />,
             },
             {
                 path: "students/community-events",
@@ -52,7 +53,7 @@ const router = createHashRouter([
             },
             {
                 path: "clinic",
-                element: <ClinicPage />,
+                element: <ClinicOverviewPage />,
             },
             {
                 path: "clinic/our-model",

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import video from '/src/assets/safesecmovie.mp4';
+// import video from '/src/assets/safesecmovie.mp4';
+import video from '/src/assets/safesecmovie.mov';
 
 
 export default function HomeIntro() {
@@ -13,7 +14,7 @@ export default function HomeIntro() {
             video.addEventListener("ended", () => {
                 video.pause();
                 video.setAttribute("style", "object-fit: cover;");
-                video.currentTime = video.duration - 0.4; // Ensure the last frame is shown
+                video.currentTime = video.duration - 0.1; // Ensure the last frame is shown
             });
         }
 
@@ -25,7 +26,7 @@ export default function HomeIntro() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center mt-6 lg:mt-20">
+        <div className="flex flex-col items-center mt-10 lg:mt-20">
             <div className="flex flex-col items-center mt-10 lg:mt-20 text-center">
                 <h1 className="mx-8 text-5xl sm:text-7xl lg:text-8xl tracking-wide">
                     <span className="bg-gradient-to-r from-blue-300 to-purple-800 text-transparent bg-clip-text font-bold">
@@ -35,7 +36,7 @@ export default function HomeIntro() {
                 <h2 className="text-xl lg:text-3xl mt-2">
                     ACCESSIBLE-IZING CYBERSECURITY
                 </h2>
-                <div className="mt-32 mb-70">
+                <div className="mt-32">
                     <video
                         ref={videoRef}
                         src={video}
