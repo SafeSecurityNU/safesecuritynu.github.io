@@ -60,7 +60,7 @@ export default function OurModelIntro() {
             </h1>
             <br />
             <h2 className="text-xl sm:text-2xl lg:text-2xl text-center tracking-wide pt-2 pb-1">
-                The NU Cyber Clinic is training the next generation of digital security leaders,<br/><strong>for</strong> students and <strong>by</strong> students.
+                Safe Security's Cyber Clinic is training the next generation of digital security leaders,<br/><strong>for</strong> students and <strong>by</strong> students.
             </h2>
             <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl flex flex-col justify-center items-center">
                 Our model consists of three phases to facilitate training students with the technical and communication skills needed to verbalize security recommendations at a high and low-level.
