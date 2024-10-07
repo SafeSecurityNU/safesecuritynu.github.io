@@ -14,17 +14,23 @@ export default function ApplicationIntro() {
 
             <br />
 
-            <div className='mt-5 mb-10 p-8 w-[45rem] h-[30rem] border border-neutral-400 shadow-[0_0_18px_rgba(255,255,255,0.5)] rounded-lg'>
-                <h2 className="text-xl sm:text-2xl lg:text-3xl text-center tracking-wide pt-2 mt-4 pb-1">
-                    Become a member of Northwestern's first ever cybersecurity clinic
+            <div className='mt-5 mb-10 p-8 w-[70vw] md:w-[60vw] md:h-[80vh] lg:w-[50vw] h-[76vh] border border-neutral-400 shadow-[0_0_18px_rgba(255,255,255,0.5)] rounded-lg'>
+                <h2 className="text-lg md:text-xl lg:text-3xl text-center tracking-wide pt-2 mt-4 pb-1">
+                Become a member of the Chicago area’s premier cybersecurity clinic
                 </h2>
-                <p className="mt-10 text-lg text-center text-neutral-400 max-w-4xl">
+                <p className="mt-10 text-sm md:text-lg lg:text-xl text-center text-neutral-400 max-w-4xl">
                 Are you interested in joining the clinic?
                 <br />
                 <br />
                 Apply to be a clinic member! Gain access to formal training, certification, professional experience, and unique educational opportunities. Grow your professional skills and experience with field work and weekly meetings.
 
+                <br />
+                <br />
+
+                All applications are due by October 8th, 2024, at 11:59 PM CST.
                 </p>
+
+                
 
                 <div className="flex justify-center mt-3">
                     <div 
