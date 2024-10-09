@@ -27,7 +27,7 @@ export default function ApplicationIntro() {
                 <br />
                 <br />
 
-                All applications are due by October 8th, 2024, at 11:59 PM CST.
+                All applications are now closed!
                 </p>
 
                 
